@@ -21,7 +21,7 @@ const Wolf = () => {
     if (typeof window !== 'undefined') {
       // Ваш код, который зависит от объекта "window"
       if (window.mobileAndTabletCheck()) {
-        gltf.scene.scale.set(250,250,250)
+        gltf.scene.scale.set(250,250,249)
       } else {
         gltf.scene.scale.set(380,380,380);
       }
@@ -29,6 +29,7 @@ const Wolf = () => {
 
     const modelScale = 180;
     const modelPosition = [0, 0, 0]; // [x, y, z]
+
 
     return (
       <>

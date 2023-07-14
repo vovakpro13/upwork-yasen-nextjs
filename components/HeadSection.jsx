@@ -44,25 +44,67 @@ const HeadSection = () => {
               We work with you until the site starts selling!
             </p>
           </div>
-          <div className="buttons-container relative w-full h-[40px] sm:h-[55px] xl:w-72 flex lg:hidden justify-between items-center gap-9 sm:gap-20 z-30 ">
-            <Link href="#" className="w-6/12">
-              <Image
-                src="/get consulting btn.svg"
-                alt="button"
-                width={120}
-                height={40}
-                className="h-full w-full"
-              />
-            </Link>
-            <Link href="#" className="w-6/12">
-              <Image
-                src="/order free audit.svg"
-                alt="button"
-                width={120}
-                height={40}
-                className="h-full w-full"
-              />
-            </Link>
+          <div className="buttons-container relative w-full h-[40px] sm:h-[55px] xl:w-72 flex lg:hidden justify-between items-center z-30 ">
+            {/*<Link href="#" className="w-6/12">*/}
+            {/*  <Image*/}
+            {/*    src="/get consulting btn.svg"*/}
+            {/*    alt="button"*/}
+            {/*    width={120}*/}
+            {/*    height={40}*/}
+            {/*    className="h-full w-full"*/}
+            {/*  />*/}
+            {/*</Link>*/}
+            {/*<Link href="#" className="w-6/12">*/}
+            {/*  <Image*/}
+            {/*    src="/order free audit.svg"*/}
+            {/*    alt="button"*/}
+            {/*    width={120}*/}
+            {/*    height={40}*/}
+            {/*    className="h-full w-full"*/}
+            {/*  />*/}
+            {/*</Link>*/}
+              <Link href="#" className="relative z-0 px-[13px] header-btn top-[4px]">
+                  <hr className="nav-button h-24 -top-5 w-0 absolute z-0 border-primary border-t-[3px] rounded-sm " />
+                  <span className="header-btn__border absolute left-0 top-0">
+                <Image
+                    src="/call.svg"
+                    alt="button"
+                    width={24}
+                    height={24}
+                    className="absolute left-[39px] -top-[10px] icon"
+                />
+                <Image
+                    src="/btn-border.svg"
+                    alt="button"
+                    width={200}
+                    height={54}
+                    className="w-full"
+                />
+              </span>
+                  <span className="header-btn__text font-montserrat">Get a consultation</span>
+
+              </Link>
+              <Link href="#" className="relative z-0 px-[13px] header-btn top-[4px] -left-[4px] pr-0">
+                  <hr className="nav-button h-24 -top-5 w-0 absolute z-0 border-primary border-t-[3px] rounded-sm " />
+                  <span className="header-btn__border absolute left-0 top-0">
+                <Image
+                    src="/document.svg"
+                    alt="button"
+                    width={24}
+                    height={24}
+                    className="absolute left-[39px] -top-[10px] icon"
+                />
+                <Image
+                    src="/btn-border.svg"
+                    alt="button"
+                    width={200}
+                    height={54}
+                    className="w-full"
+                />
+              </span>
+                  <span className="header-btn__text font-montserrat">order a free audit</span>
+
+              </Link>
           </div>
         </div>
 

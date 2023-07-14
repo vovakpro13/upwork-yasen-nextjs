@@ -13,27 +13,27 @@ const SecondSection = () => {
     hidden: { opacity: 0, scale: 0 },
   };
   return (
-    <div className="font-montserrat w-full">
+    <div className="font-montserrat w-full portfolio-title-wrap">
       <section className="px-9 lg:px-32 pt-16 xl:pt-40 xl:flex xl:justify-between">
         <div className="left-container w-full xl:w-4/12">
           <p className="flex gap-3 lg:gap-4">
             {" "}
             <motion.span
-              className="underline text-lg lg:text-4xl font-light"
+              className="underline font-light portfolio-title-our"
               initial={{ x: "-100px" }}
               whileInView={{ x: "0px" }}
               transition={{ duration: 2 }}
               // style={{ transform: `translateX(${transformX})` }}
             >
-              Нашето
+              our
             </motion.span>{" "}
             <motion.span
-              className="text-gold font-donpoligrafbum text-xl lg:text-4xl"
+              className="text-gold font-donpoligrafbum text-xl lg:text-4xl portfolio-title-text"
               initial={{ y: "-100px", opacity: 0 }}
               whileInView={{ y: "0px", opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              ПОРТ
+              Port
             </motion.span>
             <span className="font-bold text-5xl lg:text-8xl relative bottom-8 lg:bottom-[70px] ">
               {" "}
@@ -44,9 +44,9 @@ const SecondSection = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2 }}
-            className="text-gold gold-underline font-donpoligrafbum text-xl w-40 lg:text-4xl translate-x-40 lg:translate-x-48 -translate-y-5 lg:-translate-y-10"
+            className="text-gold gold-underline font-donpoligrafbum text-xl w-40 lg:text-4xl translate-x-40 lg:translate-x-48 -translate-y-5 lg:-translate-y-10 portfolio-title-text"
           >
-            ФОЛИО
+            Folio
           </motion.p>
         </div>
         <div className="right-container  w-full xl:w-7/12 xl:pl-9 flex">

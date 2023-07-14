@@ -8,40 +8,40 @@ import AnimatedWaves from "./ui/AnimatedWaves";
 
 const HeadSection = () => {
   return (
-    <section className=" h-screen lg:pt-40 bg-[#121212] ">
-      <div className="w-full h-screen overflow-hidden relative flex flex-col-reverse xl:flex-row justify-end items-center xl:items-start font-poppins text-white xl:pt-9 px-9 lg:px-32">
-        <div className="scroll w-9 absolute -bottom-5 sm:-bottom-5 xl:left-1/2 lg:bottom-32">
-          <Image
+    <section className="section-wrapper bg-[#121212] relative">
+      <div className="scroll absolute -bottom-5 sm:-bottom-5 lg:-bottom-[18px] scroll-action">
+        <Image
             src="Rectangle 1105.svg"
             alt="scroll"
             width={70}
             height={96}
             className="scroll-icon"
-          />
-          <Image
+        />
+        <Image
             src="Group 156.svg"
             alt="arrow"
-            width={15}
+            width={22}
             height={33}
-            className="relative -top-11 left-[11px] animate-bounce h-12"
-          />
-        </div>
+            className="relative arrow -top-[77px] left-[23px] animate-bounce h-12"
+        />
+      </div>
+      <div className="top-container-wrapper w-full h-screen-top-section relative flex flex-col-reverse xl:flex-row justify-end font-poppins text-white px-9 lg:px-32">
 
-        <div className="left-container relative -top-12 h-[310px] xl:h-5/6 xl:w-6/12 flex flex-col justify-between xl:mt-12">
-          <div className="text-container relative h-[183px] sm:h-[220px] xl:h-[370px] flex flex-col justify-between xl:mt-0 z-50">
-            <p className="text-primary font-semibold text-base sm:text-2xl lg:text-base xl:text-2xl ">
-              Ние правим
+        <div className="left-container relative xl:w-6/12 flex flex-col justify-between left-container-custom">
+          <div className="text-container text-container-custom relative flex flex-col justify-between xl:mt-0 z-50 pt-2.5">
+            <p className="text-primary font-semibold font-montserrat left-container-text-top">
+              Development
             </p>
-            <div className="big-text-container font-donpoligrafbum h-fit sm:h-28 xl:h-44 flex flex-col justify-between text-gold  font-bold text-[15px] sm:text-xl lg:text-2xl xl:text-4xl ">
-              <h1 className="xl:w-[750px] ">ЛЕНДИНГ СТРАНИЦИ</h1>
-              <h1 className="xl:w-[750px] translate-x-9 sm:translate-x-14 lg:translate-x-44">
-                ОНЛАЙН МАГАЗИНИ
-              </h1>
-              <h1>УЕБ САЙТОВЕ</h1>
+            <div className="big-text-container font-donpoligrafbum h-fit flex flex-col justify-between text-gold  font-bold text-[15px] sm:text-xl lg:text-2xl xl:text-4xl mt-8">
+              <h1 className="title-h1">
+                <span className="block">landing pages</span>
+                <span className="translate-x-9 sm:translate-x-14 lg:translate-x-[140px] block">
+                online shops
+                </span>
+              <span className="lg:translate-x-[31px] block">websites</span></h1>
             </div>
-            <p className="text-primary sm:text-lg lg:text-lg xl:text-3xl xl:font-light max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-[620px] ">
-              И можем да се ангажираме с гаранция, че Вашият бизнес, ще започне
-              да продава
+            <p className="font-montserrat mt-8 leading-[50px] text-primary sm:text-[16px] lg:text-[22px] text-caption xl:font-light max-w-xs sm:max-w-md lg:max-w-[570px] xl:max-w-[620px] title-text">
+              We work with you until the site starts selling!
             </p>
           </div>
           <div className="buttons-container relative w-full h-[40px] sm:h-[55px] xl:w-72 flex lg:hidden justify-between items-center gap-9 sm:gap-20 z-30 ">
@@ -64,17 +64,10 @@ const HeadSection = () => {
               />
             </Link>
           </div>
-          <Image
-            src="/Vector.svg"
-            alt="vector"
-            width={94}
-            height={81}
-            className="dots hidden xl:block absolute bottom-12 right-52 z-10"
-          />
         </div>
 
-        <div className="right-container relative xl:-top-24 z-10 h-2/6 xl:h-5/6 flex items-center w-full xl:translate-y-8 xl:w-6/12 mt-28 lg:mt-0">
-          <div className="wolf-container w-full h-full -translate-y-5 lg:-top-10 flex items-center xl:items-end justify-center overflow-hidden">
+        <div className="right-container right-container-custom relative xl:-top-24 z-10 h-2/6 xl:h-5/6 flex items-center w-full xl:translate-y-8 xl:w-6/12">
+          <div className="wolf-container w-full h-full -translate-y-5 lg:-top-10 flex items-center xl:items-start justify-center overflow-hidden">
             <Wolf/>
             {/* <iframe
               title="Clay Wolf"
@@ -110,7 +103,14 @@ const HeadSection = () => {
         alt="vline"
         width={10}
         height={950}
-        className="vline absolute -bottom-[1150px] xl:-bottom-[1020px] right-1/2 -translate-x-11 sm:-translate-x-8 xl:-translate-x-32 z-0"
+        className="vline absolute -bottom-[1150px] xl:-bottom-[1020px] right-[57%] -translate-x-11 sm:-translate-x-8 xl:-translate-x-32 z-0"
+      />
+      <Image
+          src="/Vector.svg"
+          alt="vector"
+          width={94}
+          height={81}
+          className="dots hidden xl:block absolute bottom-0 left-[21%] z-10"
       />
     </section>
   );

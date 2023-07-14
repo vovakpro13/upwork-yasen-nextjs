@@ -22,7 +22,9 @@
   animation-duration: 5s;
   z-index: 0;
 }
-
+.menu-container{
+  cursor: pointer;
+}
 @keyframes first-forever {
   0% {
     width: 4290px;

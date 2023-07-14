@@ -27,8 +27,8 @@ const Wolf = () => {
       }
     }
 
-    const modelScale = 180;
-    const modelPosition = [0, 0, 0]; // [x, y, z]
+    // const modelScale = 180;
+    // const modelPosition = [0, 0, 0]; // [x, y, z]
 
 
     return (

@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import './components.css'
 
 const AnimatedWaves = () => {
     return (
-      <div className="w-full absolute left-0 top-40 overflow-hidden z-0">
+      <div className="w-full animated-waves-wrapper absolute left-0 z-0">
         <div className="waves h-[550px] w-[3200px] relative ">
           <Image
             src="/wawes.webp"

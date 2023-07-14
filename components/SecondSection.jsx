@@ -19,7 +19,7 @@ const SecondSection = () => {
           <p className="flex gap-3 lg:gap-4">
             {" "}
             <motion.span
-              className="underline font-light portfolio-title-our"
+              className="underline font-light portfolio-title-our relative"
               initial={{ x: "-100px" }}
               whileInView={{ x: "0px" }}
               transition={{ duration: 2 }}
@@ -28,14 +28,14 @@ const SecondSection = () => {
               our
             </motion.span>{" "}
             <motion.span
-              className="text-gold font-donpoligrafbum text-xl lg:text-4xl portfolio-title-text"
+              className="text-gold font-donpoligrafbum portfolio-title-text"
               initial={{ y: "-100px", opacity: 0 }}
               whileInView={{ y: "0px", opacity: 1 }}
               transition={{ duration: 1 }}
             >
               Port
             </motion.span>
-            <span className="font-bold text-5xl lg:text-8xl relative bottom-8 lg:bottom-[70px] ">
+            <span className="font-bold relative portfolio-title-tire">
               {" "}
               _
             </span>
@@ -44,39 +44,35 @@ const SecondSection = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2 }}
-            className="text-gold gold-underline font-donpoligrafbum text-xl w-40 lg:text-4xl translate-x-40 lg:translate-x-48 -translate-y-5 lg:-translate-y-10 portfolio-title-text"
+            className="text-gold gold-underline font-donpoligrafbum w-40 translate-x-40 lg:translate-x-44 -translate-y-5 lg:-translate-y-10 portfolio-title-text folio"
           >
             Folio
           </motion.p>
         </div>
-        <div className="right-container  w-full xl:w-7/12 xl:pl-9 flex">
+        <div className="right-container w-full xl:w-7/12 flex">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 2 }}
+            className="portfolio-title-desc-icon"
           >
             <Image
-              src="/Group-118.webp"
+              src="/portfolio-icon.png"
               alt="logo"
-              width={105}
-              height={110}
-              className="h-32"
+              width={140}
+              height={180}
             />
           </motion.div>
           <motion.p
             initial={{ x: "100px", opacity: 0 }}
             whileInView={{ x: "0px", opacity: 1 }}
             transition={{ duration: 1 }}
-            className=" underline font-semibold text-xs sm:text-sm lg:text-lg w-full xl:max-w-4xl "
+            className=" underline font-semibold portfolio-title-desc w-full xl:max-w-4xl "
           >
-            Тук нашите конкуренти слагат фейк ревюта от несъществуващи свои
-            клиенти.{" "}
+            Here our competetors put fake client reviews.{" "}
             <span className="green-underline text-[#44937D] ">
-              Ние не правим така! Вместо това Ви приканваме, да позвъните по
-              телефона, на който и да е от нашите клиенти и да ги попитате
-              лично, дали са доволни от работата ни.
-            </span>
-            Всички проекти в нашето портфолио, са с активни линкове към тях.{" "}
+              Instead of doing this, we encourage you to call ANY of our previous clients over the phone and ask them did we completed the project successfully.
+            </span> Their websites are all listed in the portfolio section.{" "}
           </motion.p>
         </div>
       </section>

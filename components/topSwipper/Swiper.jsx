@@ -26,49 +26,49 @@ const MySwiper = () => {
   const handleChange = (swiper) => {
     console.log(swiper.realIndex);
     setActiveIndex(swiper.realIndex);
-    setScrollValue((220 / slideCount) * swiper.realIndex);
+    setScrollValue((700 / slideCount) * swiper.realIndex);
     // console.log(scrollValue);
   };
   console.log(activeIndex);
   return (
     <>
-      <div className="scrool h-36 w-full flex justify-end items-center pr-9 lg:pr-32">
-        <div className="line relative">
-          <Image src="/Group 159.svg" alt="scroll" width={230} height={6} />
+      <div className="scrool swiper-scroll w-full flex justify-end items-center">
+        <div className="line relative swiper-line">
+          <Image src="/Group 159.svg" alt="scroll" width={230} height={6} className="swiper-line-img" />
           <Image
             src="/Group 160.svg"
             alt="circle"
-            width={11}
-            height={11}
-            className={`absolute bottom-0 transition-all duration-500 ease-in-out`}
+            width={27}
+            height={27}
+            className={`absolute bottom-0 transition-all duration-500 ease-in-out swiper-circle`}
             style={{
               transform: `translateX(${scrollValue + 220 / slideCount}px)`,
             }}
           />
         </div>
         <div className="swiper-count flex ml-5 gap-3">
-          <Image src="/arrow.svg" alt="scroll" width={10} height={2} />
+          <Image src="/arrow.svg" alt="scroll" width={13} height={2} />
           <p className="text-2xl font-medium">
             <span className="text-primary"> {activeIndex + 1}</span>/
             {slideCount}
           </p>
-          <Image src="/arrowr.svg" alt="arrow" width={10} height={2} />
+          <Image src="/arrowr.svg" alt="arrow" width={13} height={2} />
         </div>
         <div className=" relative flex">
           <Image
-            src="/finger.svg"
+            src="flick-to-left 3.svg"
             alt="scroll"
             width={63}
             height={56}
             className="finger"
           />
-          <Image
-            src="/fingerarrow.svg"
-            alt="scroll"
-            width={43}
-            height={56}
-            className="absolute -top-1 left-9 rotate-12"
-          />
+          {/*<Image*/}
+          {/*  src="/fingerarrow.svg"*/}
+          {/*  alt="scroll"*/}
+          {/*  width={43}*/}
+          {/*  height={56}*/}
+          {/*  className="absolute -top-1 left-9 rotate-12"*/}
+          {/*/>*/}
         </div>
       </div>
       <Swiper

@@ -33,16 +33,63 @@
 .portfolio-title{
 
 }
+.folio{
+  position: relative;
+  top: 25px;
+}
 .portfolio-title-our{
   font-size: 46px;
+  top: -8px;
 }
 .portfolio-title-text{
   font-size: 48px;
 }
+.portfolio-title-tire{
+  font-size: 164px;
+  line-height: 0;
+  bottom: 40px;
+}
+.portfolio-title-desc{
+  font-size: 20px;
+  line-height: 36px;
+  padding-top: 10px;
+}
+.portfolio-title-desc-icon img{
+  width: 100%;
+  min-width: 166px;
+}
+.portfolio-title-desc-icon{
+  max-width: 149px;
+  width: 100%;
+  position: relative;
+  top: -3px;
+  left: -12px;
+}
+
 
 /*-----------------------------*/
 /*       END portfoliio        */
 /*-----------------------------*/
+
+
+.swiper-line{
+  width: 37.3%;
+}
+.swiper-line-img{
+  width: 100%;
+}
+.swiper-circle{
+  top: -9px;
+}
+.swiper-scroll{
+  padding-right: 37px;
+  margin-top: 7px;
+  margin-bottom: 37px;
+}
+.swiper-count{
+  margin-right: 37px;
+  margin-left: 28px;
+}
 @keyframes first-forever {
   0% {
     width: 4290px;

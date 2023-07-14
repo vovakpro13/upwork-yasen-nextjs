@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import Image from "next/image";
@@ -16,6 +16,7 @@ const MySwiper = () => {
   const [slideCount, setSlideCount] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
   const [scrollValue, setScrollValue] = useState(2);
   const [activeIndex, setActiveIndex] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+  const [windowWidthState, setWindowWidthState] = useState(''); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
   // console.log(slideCount);
   // console.log(scrollValue);
   //   const handleSlideChange = (swiper) => {
@@ -23,10 +24,20 @@ const MySwiper = () => {
   // setActiveIndex(swiper.activeIndex);
   //   };
 
+  const windowWidth = window.innerWidth;
+  useEffect(() => {
+    setWindowWidthState(windowWidth)
+  }, [windowWidthState])
+  console.log('windowWidth', windowWidthState)
   const handleChange = (swiper) => {
     console.log(swiper.realIndex);
     setActiveIndex(swiper.realIndex);
     setScrollValue((700 / slideCount) * swiper.realIndex);
+    if(windowWidthState >= 1100) {
+      setScrollValue((700 / slideCount) * swiper.realIndex);
+    } else {
+      setScrollValue((380 / slideCount) * swiper.realIndex);
+    }
     // console.log(scrollValue);
   };
   console.log(activeIndex);
@@ -46,29 +57,24 @@ const MySwiper = () => {
             }}
           />
         </div>
-        <div className="swiper-count flex ml-5 gap-3">
-          <Image src="/arrow.svg" alt="scroll" width={13} height={2} />
-          <p className="text-2xl font-medium">
-            <span className="text-primary"> {activeIndex + 1}</span>/
-            {slideCount}
-          </p>
-          <Image src="/arrowr.svg" alt="arrow" width={13} height={2} />
-        </div>
-        <div className=" relative flex">
-          <Image
-            src="flick-to-left 3.svg"
-            alt="scroll"
-            width={63}
-            height={56}
-            className="finger"
-          />
-          {/*<Image*/}
-          {/*  src="/fingerarrow.svg"*/}
-          {/*  alt="scroll"*/}
-          {/*  width={43}*/}
-          {/*  height={56}*/}
-          {/*  className="absolute -top-1 left-9 rotate-12"*/}
-          {/*/>*/}
+        <div className="swiper-control-wrap flex">
+          <div className="swiper-count flex ml-5 gap-3">
+            <Image src="/arrow.svg" alt="scroll" width={13} height={2} />
+            <p className="text-2xl font-medium">
+              <span className="text-primary"> {activeIndex + 1}</span>/
+              {slideCount}
+            </p>
+            <Image src="/arrowr.svg" alt="arrow" width={13} height={2} />
+          </div>
+          <div className=" relative flex">
+            <Image
+                src="flick-to-left 3.svg"
+                alt="scroll"
+                width={63}
+                height={56}
+                className="finger"
+            />
+          </div>
         </div>
       </div>
       <Swiper
@@ -89,7 +95,13 @@ const MySwiper = () => {
             activeIndex == 0 ? "active-slide " : "topslide "
           } bg-red-700 `}
         >
-          Slide
+          <Image
+              src="/portfolio/slide-1-big.png"
+              alt="slide"
+              width={100}
+              height={100}
+              className="slide"
+          />
         </SwiperSlide>
         <SwiperSlide
           className={`${

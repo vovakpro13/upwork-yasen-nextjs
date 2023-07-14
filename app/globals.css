@@ -73,7 +73,8 @@
 
 
 .swiper-line{
-  width: 37.3%;
+  width: 100%;
+  max-width: 702px;
 }
 .swiper-line-img{
   width: 100%;
@@ -89,6 +90,53 @@
 .swiper-count{
   margin-right: 37px;
   margin-left: 28px;
+}
+.slide{
+  width: 100%;
+  object-fit: contain;
+  height: 450px;
+}
+
+@media screen and (max-width: 1100px){
+  .portfolio-title-our{
+    font-size: 18px;
+  }
+  .portfolio-title-text{
+    font-size: 36px;
+  }
+  .portfolio-title-tire {
+    font-size: 75px;
+    bottom: 9px;
+  }
+  .portfolio-title-desc-icon img {
+    width: 100%;
+    min-width: 90px;
+  }
+  .portfolio-title-desc {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 10px;
+  }
+  .folio{
+    left: -54px;
+  }
+  .portfolio-title-desc-icon {
+    max-width: 80px;
+    width: 100%;
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+  .portfolio-title-desc-icon img {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 1100px){
+  .swiper-line{
+    max-width: 400px;
+  }
 }
 @keyframes first-forever {
   0% {

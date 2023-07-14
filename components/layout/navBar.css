@@ -347,6 +347,11 @@
     }
 }
 
+@media screen and (max-width: 743px) and (min-width: 541px){
+    .header-btn {
+        margin-right: 50px;
+    }
+}
 @media screen and (max-width: 743px) {
     .navbar {
         padding-left: 37px;
@@ -358,6 +363,7 @@
     .buttons-container {
         max-width: 320px;
     }
+
 }
 
 @media screen and (max-width: 671px) {

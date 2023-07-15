@@ -179,6 +179,16 @@
 .frame, .name1, .name2{
   transition: .3s;
 }
+@media screen and (max-width: 1600px){
+    .clients-text-clients{
+        /*font-size: 46px;*/
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1280px){
+    .plan-title {
+        font-size: 46px;
+    }
+}
 @media screen and (max-width: 1376px){
     .line-container-faq{
         max-width: 90px;

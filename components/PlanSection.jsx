@@ -14,7 +14,7 @@ function PlanSection() {
         />
         <div className="title-container w-[270px] sm:w-[520px] xl:w-[580px] 2xl:w-[680px] flex justify-between items-start">
           <hr className="w-[30px] sm:w-[81px] h-2 border-gold border-t-[8px] sm:border-t-[18px] translate-y-3 xl:hidden " />
-          <p className="title-global text-gold w-[160px] sm:w-[300px] xl:w-auto font-donpoligrafbum gold-underline text-xl sm:text-4xl xl:text-[56px] 2xl:text-[76px] sm:leading-[50px] xl:leading-[60px] 2xl:leading-[75px] font-bold text-end 2xl:ml-16 ">
+          <p className="title-global plan-title text-gold w-[160px] sm:w-[300px] xl:w-auto font-donpoligrafbum gold-underline text-xl sm:text-4xl xl:text-[56px] 2xl:text-[76px] sm:leading-[50px] xl:leading-[60px] 2xl:leading-[75px] font-bold text-end 2xl:ml-16 ">
             CHOOSE PLAN
           </p>
           <div className="xl:pl-7">

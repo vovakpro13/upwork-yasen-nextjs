@@ -60,24 +60,6 @@ const MySwiper = () => {
         },
     ];
 
-    // const breakpoints = {
-    //     640: {
-    //         slidesPerView: 2
-    //     },
-    //     768: {
-    //         slidesPerView: 2
-    //     },
-    //     1024: {
-    //         slidesPerView: 3
-    //     },
-    //     1377: {
-    //         slidesPerView: 4
-    //     },
-    //     1600: {
-    //         slidesPerView: 6
-    //     },
-    // };
-
     const [activeSlide, setActiveSlide] = useState(slides[0]);
 
 
@@ -112,7 +94,7 @@ const MySwiper = () => {
     const slidesPerView = Math.floor(containerWidth / slideWidth); // Розрахунок кількості видимих слайдів
     useEffect(() => {
         setWindowWidthState(windowWidth)
-    }, [windowWidthState])
+    }, [windowWidthState, windowWidth])
     console.log('windowWidth', windowWidthState)
     const   handleChange = (swiper) => {
         console.log(swiper.realIndex);

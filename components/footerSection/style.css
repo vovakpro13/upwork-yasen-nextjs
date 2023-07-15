@@ -1,0 +1,16 @@
+.footer-section{
+    border-radius: 0 60px 0 0;
+    background: linear-gradient(264.71deg, #18201E 0%, #121212 100%);
+}
+.footer-social{
+    transition: .3s;
+}
+.footer-social:hover{
+    transform: scale(1.2);
+}
+.footer-navbar ul li a{
+    transition: .3s;
+}
+.footer-navbar ul li a:hover{
+    opacity: .7;
+}

@@ -32,13 +32,13 @@ function TeamSection() {
           </p>
         </div>
         <div className="first-right-container  ">
-          <div className="big-text text-gold flex justify-end items-center">
+          <div className="big-text text-gold flex justify-end xl:justify-evenly items-center">
             <p>
-              <span className="font-montserrat text-[18px] xl:text-[37px] font-light underline ">
+              <span className="font-montserrat text-[18px] xl:text-[46px] font-light underline ">
                 our
               </span>{" "}
               {""}
-              <span className="font-donpoligrafbum text-[20px] sm:text-[36px] xl:text-[33px] 2xl:text-[56px] font-bold gold-underline xl:ml-2 ">
+              <span className="font-donpoligrafbum text-[20px] sm:text-[36px] xl:text-[33px] 2xl:text-[56px] font-bold xl:ml-2 ">
                 TEAM{" "}
               </span>
             </p>

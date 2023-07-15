@@ -60,7 +60,7 @@
     width: 100%;
     max-width: 100%;
     object-fit: cover;
-    object-position: right bottom;
+    object-position: left top;
     height: 480px;
     transition: .5s;
 }

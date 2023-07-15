@@ -166,7 +166,7 @@ const MySwiper = () => {
                 mousewheel={true}
                 spaceBetween={10}
                 // slidesPerView={slidesPerView}
-                initialSlide={0}
+                initialSlide={1}
                 centeredSlides={true}
                 navigation={{
                     prevEl: '.custom-prev',

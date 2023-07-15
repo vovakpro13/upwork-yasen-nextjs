@@ -166,6 +166,19 @@
         margin-top: 197px;
     }
 }
+.person-container{
+    cursor: pointer;
+}
+.person-container:hover  .frame{
+    scale: 1.3;
+    transform-origin: bottom;
+}
+.person-container:hover .name1{
+    /*font-size: 28px;*/
+}
+.frame, .name1, .name2{
+  transition: .3s;
+}
 @media screen and (max-width: 1376px){
     .line-container-faq{
         max-width: 90px;

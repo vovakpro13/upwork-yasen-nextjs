@@ -83,7 +83,7 @@ function TeamSection() {
                 alt="rectangle"
                 width={50}
                 height={50}
-                className=" "
+                className="object-contain "
               />
             </div>
             <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
@@ -96,11 +96,11 @@ function TeamSection() {
           <div className="person-container flex flex-col items-center gap-2">
             <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image
-                src="/5.svg"
+                src="/teem/2.svg"
                 alt="rectangle"
                 width={50}
                 height={50}
-                className=" "
+                className=" object-contain"
               />
             </div>
             <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
@@ -110,31 +110,31 @@ function TeamSection() {
               Marketer
             </p>
           </div>
-          <div className="manager-container flex flex-col items-center gap-2">
-            <div className="frame w-[74px] h-[74px] xl:w-[140px] xl:h-[140px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
+          <div className="person-container flex flex-col items-center gap-2">
+            <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image
-                src="/5.svg"
+                src="/teem/3.svg"
                 alt="rectangle"
-                width={90}
-                height={92}
-                className="w-[50px] xl:w-[90px] "
+                width={50}
+                height={50}
+                className="object-contain"
               />
             </div>
-            <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[28px] text-[#EFF6F4] ">
+            <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
               Mike Green
             </p>
-            <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-lg">
+            <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
               Preject Manager
             </p>
           </div>
           <div className="person-container flex flex-col items-center gap-2">
             <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image
-                src="/5.svg"
+                src="/teem/4.svg"
                 alt="rectangle"
                 width={50}
                 height={50}
-                className=" "
+                className="object-contain "
               />
             </div>
             <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
@@ -147,11 +147,11 @@ function TeamSection() {
           <div className="person-container flex flex-col items-center gap-2">
             <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image
-                src="/5.svg"
+                src="/teem/5.1.svg"
                 alt="rectangle"
                 width={50}
                 height={50}
-                className=" "
+                className="object-contain "
               />
             </div>
             <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">

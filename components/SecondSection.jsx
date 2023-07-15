@@ -76,7 +76,7 @@ const SecondSection = () => {
           </motion.p>
         </div>
       </section>
-      <div>
+      <div className="relative z-10">
         {/* <AnimatedWaves /> */}
         <MySwiper />
       </div>

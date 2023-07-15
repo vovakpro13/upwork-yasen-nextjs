@@ -217,7 +217,7 @@ const Plans = () => {
       <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
         <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image
-            src="/medium (2).svg"
+            src="/portfolio/larg-icon-2.png"
             alt="line"
             width={84}
             height={100}
@@ -358,7 +358,7 @@ const Plans = () => {
       <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
         <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-0">
           <Image
-            src="/small (2).svg"
+            src="/portfolio/larg-icon-3.png"
             alt="line"
             width={168}
             height={160}

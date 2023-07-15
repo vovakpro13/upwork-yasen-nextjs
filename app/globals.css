@@ -71,31 +71,30 @@
 /*       END portfoliio        */
 /*-----------------------------*/
 
+/*-----------------------------*/
+/*         experience          */
+/*-----------------------------*/
 
-.swiper-line{
+.experience-wrap{
+  padding-top: 193px;
+}
+.info-container{
+  right: 110px;
+  top: -13px;
+}
+.info-container-tex{
+  font-size: 52px;
+}
+.text-end-custom{
+  font-size: 26px;
   width: 100%;
-  max-width: 702px;
+  max-width: 370px;
 }
-.swiper-line-img{
-  width: 100%;
-}
-.swiper-circle{
-  top: -9px;
-}
-.swiper-scroll{
-  padding-right: 37px;
-  margin-top: 7px;
-  margin-bottom: 37px;
-}
-.swiper-count{
-  margin-right: 37px;
-  margin-left: 28px;
-}
-.slide{
-  width: 100%;
-  object-fit: contain;
-  height: 450px;
-}
+
+/*-----------------------------*/
+/*       END experience        */
+/*-----------------------------*/
+
 
 @media screen and (max-width: 1100px){
   .portfolio-title-our{
@@ -133,11 +132,26 @@
     min-width: unset;
   }
 }
-@media screen and (max-width: 1100px){
-  .swiper-line{
-    max-width: 400px;
+
+
+@media screen and (max-width: 1024px){
+  .info-container {
+    right: 60px;
+    top: 0;
+  }
+  .text-end-custom{
+    font-size: 18px;
+    max-width: 280px;
   }
 }
+
+@media screen and (max-width: 639px){
+  .text-end-custom{
+    font-size: 14px;
+    max-width: 235px;
+  }
+}
+
 @keyframes first-forever {
   0% {
     width: 4290px;

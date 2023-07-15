@@ -10,7 +10,7 @@ function DropDown({number}) {
         isOpen ? "h-fit rounded-br-[40px] " : "h-[120px] rounded-tl-[40px] "
       } transition-all duration-500 ease-in-out xl:px-[140px] px-8 py-8`}
     >
-      <div className="title flex justify-between items-center xl:h-[120px] w-full  ">
+      <div className="title flex justify-between items-center xl:h-[58px] w-full  ">
         <p>
           <span className="text-[#CDE1DB] font-donpoligrafbum text-xs sm:text-lg xl:text-[26px] ">
             {number}.

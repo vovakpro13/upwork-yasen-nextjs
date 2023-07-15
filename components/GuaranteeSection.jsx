@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function GuaranteeSection() {
   return (
-    <div className="w-full h-[223px] sm:h-[346px] xl:h-[548px] flex flex-col justify-start items-center bg-[#F3F8F3] px-9 lg:px-32 mb-96 mt-[50px] sm:mt[78px] xl:mt-[140px] pt-[44px] xl:pt-[65px] ">
+    <div className="w-full h-[223px] sm:h-[346px] xl:h-[548px] flex flex-col justify-start items-center bg-[#F3F8F3] px-9 lg:px-32 mb-[50px] mt-[50px] sm:mt[78px] xl:mt-[140px] pt-[44px] xl:pt-[65px] ">
       <div className="relative z-10 w-full flex justify-center">
         <Image
           src="/blackdots.svg"

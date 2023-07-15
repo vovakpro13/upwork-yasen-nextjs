@@ -2,9 +2,9 @@ import Image from "next/image";
 import BottomSwiper from "./bottomSwipper/BottomSwipper"
 function ThirdSection() {
   return (
-    <section>
-      <div className="w-full px-9 lg:px-[133px] h-[244px] sm:h-[300px] xl:h-[500px] mt-28 mb-10">
-        <div className="title-container w-full font-donpoligrafbum h-[68px] sm:h-[92px] xl:h-[169px] text-sm sm:text-xl lg:text-2xl xl:text-[50px] font-bold flex flex-col justify-between">
+    <section className="pb-[90px]">
+      <div className="w-full px-9 lg:px-[133px] mb-10 experience-wrap">
+        <div className="title-container w-full font-donpoligrafbum h-[68px] sm:h-[92px] xl:h-[169px] text-sm sm:text-xl lg:text-2xl xl:text-[58px] font-bold flex flex-col justify-between">
           <h2 className="  w-full flex justify-end gap-3 xl:gap-7">
             <span className="text-gold gold-underline">WE BELIEVE </span>{" "}
             <span className="no-underline text-black">IN OUR</span>
@@ -26,10 +26,10 @@ function ThirdSection() {
           </h2>
         </div>
         <div className="info-container relative h-[106px] sm:h-[152px] xl:h-[210px] w-full font-montserrat flex flex-col justify-between items-end border-r-[1px] border-primary mt-5 xl:mt-[60px] pr-3 sm:pr-6 ">
-          <p className="w-[175px] sm:w-[240px] xl:w-[480px] h-[31px] xl:h-[88px] text-end font-semibold xl:font-normal xl:leading-[52px] sm:text-[22px] xl:text-[46px] ">
+          <p className="info-container-text w-[175px] sm:w-[240px] xl:w-[480px] h-[31px] xl:h-[88px] text-end font-semibold xl:font-normal xl:leading-[52px] sm:text-[22px] xl:text-[46px] ">
             We have gained over the years”
           </p>
-          <p className="w-[216px] sm:w-[236px] text-end text-sm sm:text-lg xl:text[26px] font-medium ">
+          <p className="text-end text-end-custom font-medium ">
             of developing products of varying complexity
           </p>
           <Image

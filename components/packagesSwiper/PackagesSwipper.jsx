@@ -18,17 +18,17 @@ const PackagesSwipper = () => {
   console.log(activeIndex);
   return (
     <>
-      <div className=" relative flex">
-        <Image src="/finger.svg" alt="scroll" width={63} height={56} />
-        <Image
-          src="/fingerarrow.svg"
-          alt="scroll"
-          width={43}
-          height={56}
-          className="absolute -top-1 left-9 rotate-12"
-        />
+      <div className="finger-packges-slider relative flex">
+        <Image src="/flick-to-left 3.svg" alt="scroll" width={63} height={56} />
+        {/*<Image*/}
+        {/*  src="/fingerarrow.svg"*/}
+        {/*  alt="scroll"*/}
+        {/*  width={43}*/}
+        {/*  height={56}*/}
+        {/*  className="absolute -top-1 left-9 rotate-12"*/}
+        {/*/>*/}
       </div>
-      <div className="swiper-container !w-full flex justify-center">
+      <div className="swiper-container swiper-container-packages !w-full flex justify-center">
         <Swiper
           // freeMode={true}
           mousewheel={true}

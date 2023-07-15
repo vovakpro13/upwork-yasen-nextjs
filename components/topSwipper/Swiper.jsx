@@ -60,7 +60,7 @@ const MySwiper = () => {
         },
     ];
 
-    const [activeSlide, setActiveSlide] = useState(slides[0]);
+    // const [activeSlide, setActiveSlide] = useState(slides[0]);
 
     const breakpoints = {
         640: {
@@ -80,17 +80,6 @@ const MySwiper = () => {
         },
     };
 
-    const handleSlideChange = (swiper) => {
-        const activeIndex = swiper.activeIndex;
-        const newActiveSlide = slides[activeIndex];
-        setActiveSlide(newActiveSlide);
-    };
-    // console.log(slideCount);
-    // console.log(scrollValue);
-    //   const handleSlideChange = (swiper) => {
-
-    // setActiveIndex(swiper.activeIndex);
-    //   };
     const swiperRef = useRef(null);
 
     const goPrev = () => {
@@ -104,14 +93,22 @@ const MySwiper = () => {
             swiperRef.current.swiper.slideNext();
         }
     };
-    const windowWidth = window.innerWidth;
+
+
     // const slideWidth = 260; // Ширина кожного слайда (в пікселях)
     // const containerWidth = windowWidthState; // Ширина контейнера слайдера (в пікселях)
     // const slidesPerView = Math.floor(containerWidth / slideWidth); // Розрахунок кількості видимих слайдів
     useEffect(() => {
-        setWindowWidthState(windowWidth)
-    }, [windowWidthState, windowWidth])
-    console.log('windowWidth', windowWidthState)
+        if (typeof window !== 'undefined') {
+            // Code that references the window object
+            // ...
+            const windowWidth = window.innerWidth;
+            setWindowWidthState(windowWidth)
+        }
+
+
+    }, [windowWidthState])
+
     const   handleChange = (swiper) => {
         console.log(swiper.realIndex);
         setActiveIndex(swiper.realIndex);

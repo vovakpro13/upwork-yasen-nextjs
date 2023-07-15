@@ -3,31 +3,22 @@ import Image from "next/image";
 
 function ClientsSection() {
   return (
-    <section className="clients-container w-full relative h-[333px] sm:h-[470px] xl:h-[620px] overflow-hidden">
+    <section className="clients-container w-full relative h-[333px] sm:h-[470px] xl:h-[585px] overflow-hidden">
       <div className="text-container relative z-50 w-full h-24 flex flex-col sm:flex-row justify-between sm:justify-center sm:gap-5 sm:items-center xl:justify-between xl:px-32 mt-[62px] xl:mt-[92px] ">
-        <p className="text-gold flex w-[265px] sm:w-[320px] xl:w-[750px] justify-between items-center ml-6 sm:ml-0">
-          <span className="font-montserrat  gold-underline font-extralight text-lg xl:text-[46px] ">
+        <p className="font-donpoligrafbum text-gold flex w-[265px] sm:w-[320px] xl:w-[847px] justify-between items-center ml-6 sm:ml-0 clients-section-title">
+          <span className="font-montserrat  gold-underline font-extralight text-lg xl:text-[46px] clients-section-title-our">
             our
-          </span>{" "}
-          <span className="font-donpoligrafbum text-xl sm:text-[26px] font-bold xl:text-[66px] ">
-            CLIENTS
-          </span>{" "}
-          <Image
-            src="/Rectangle 23.svg"
-            alt="-"
-            width={30}
-            height={8}
-            className="sm:w-[30px] xl:w-[81px] xl:h-[16px] "
-          />
+          </span>
+            CLIENTS -
         </p>
         <Image
           src="/Group 25.svg"
           alt="line"
           width={255}
           height={8}
-          className="hidden xl:block"
+          className="hidden xl:block clients-section-title-line"
         />
-        <p className="text-[#EFF6F4] font-montserrat w-[230px] xl:w-[260px] text-sm xl:text-base text-center sm:text-end font-light xl:font-normal translate-x-14 sm:translate-x-0">
+        <p className="text-[#EFF6F4] font-montserrat w-[230px] xl:w-[260px] text-sm xl:text-base text-center sm:text-end font-light xl:font-normal translate-x-14 sm:translate-x-0 clients-section-title-desc">
           Landing pages & online shops optimized for higher conversion rate &
           more sales (more clients)
         </p>

@@ -3,7 +3,7 @@ import DropDown from "./ui/DropDown";
 
 function FaqSection() {
   return (
-    <section className="px-9 lg:px-32">
+    <section className="px-9 lg:px-32 faq-section">
       <div className="title-container ">
         <div className="first-container flex w-full">
           <div className="big-text w-1/3 flex justify-start">
@@ -22,7 +22,7 @@ function FaqSection() {
             <p className="max-w-[259px] ">
               Landing pages & online shops optimized for highe.
             </p>
-            <div className="line-container relative w-[40%] xl:w-[60%]">
+            <div className="line-container line-container-faq relative w-[40%] xl:w-[60%]">
               <Image
                 src="/Rectangle 15.svg"
                 alt="rectangle"
@@ -43,12 +43,12 @@ function FaqSection() {
         </div>
         <div className="second-container"></div>
       </div>
-      <div className="flex flex-col gap-4 xl:mt-[124px] ">
-        <DropDown number={1} />
-        <DropDown number={2} />
-        <DropDown number={3} />
-        <DropDown number={4} />
-        <DropDown number={5} />
+      <div className="flex flex-col gap-4 xl:mt-[124px] faq-wrapper-drop">
+        <DropDown number={1} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}/>
+        <DropDown number={2} description={'Distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.'} />
+        <DropDown number={3} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}/>
+        <DropDown number={4} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}/>
+        <DropDown number={5} description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}/>
       </div>
     </section>
   );

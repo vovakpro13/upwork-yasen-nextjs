@@ -18,7 +18,7 @@ const PackagesSwipper = () => {
   console.log(activeIndex);
   return (
     <>
-      <div className="finger-packges-slider relative flex">
+      <div className="finger-packges-slider relative flex 911">
         <Image src="/flick-to-left 3.svg" alt="scroll" width={63} height={56} />
         {/*<Image*/}
         {/*  src="/fingerarrow.svg"*/}

@@ -2,9 +2,9 @@ import Image from "next/image";
 import BottomSwiper from "./bottomSwipper/BottomSwipper"
 function ThirdSection() {
   return (
-    <section className="pb-[90px]">
+    <section className="pb-[90px] third-section">
       <div className="w-full px-9 lg:px-[133px] mb-10 experience-wrap">
-        <div className="title-container w-full font-donpoligrafbum h-[68px] sm:h-[92px] xl:h-[169px] text-sm sm:text-xl lg:text-2xl xl:text-[58px] font-bold flex flex-col justify-between">
+        <div className="title-container-third w-full font-donpoligrafbum h-[68px] sm:h-[92px] xl:h-[169px] text-sm sm:text-xl lg:text-[46px] xl:text-[59px] font-bold flex flex-col justify-between">
           <h2 className="  w-full flex justify-end gap-3 xl:gap-7">
             <span className="text-gold gold-underline">WE BELIEVE </span>{" "}
             <span className="no-underline text-black">IN OUR</span>

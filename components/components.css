@@ -1,0 +1,174 @@
+/*-----------------------------*/
+/*            client           */
+/*-----------------------------*/
+
+.clients-section-title, .title-global{
+    font-size: 76px;
+}
+.clients-section-title-our{
+    position: relative;
+    top: -22px;
+}
+.clients-section-title-line{
+    left: -105px;
+    top: -12px;
+    position: relative;
+}
+.clients-section-title-desc{
+    position: relative;
+    top: -18px;
+}
+@media screen and (min-width: 1280px){
+
+}
+
+@media screen and (max-width: 1279px){
+    .clients-section-title, .title-global{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .plan-container {
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .clients-section-title, .title-global{
+        font-size: 20px;
+    }
+}
+
+/*-----------------------------*/
+/*       END   client          */
+/*-----------------------------*/
+
+
+/*plan*/
+
+.wrapper-plan{
+    margin-top: 114px;
+}
+
+.plan-container{
+    padding-top: 153px;
+}
+
+.text-container-decor{
+
+}
+.title-container-line{
+    position: relative;
+    top: 29px;
+}
+.info-container-plan-title{
+    letter-spacing: 4px;
+}
+
+/*guarantee*/
+
+/*faq*/
+
+.text-line-container{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1440px){
+    .title-container-third{
+       font-size: 46px;
+    }
+}
+@media screen and (max-width: 1279px){
+    .title-container-third{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 540px){
+    .title-container-third{
+        font-size: 14px;
+    }
+    .text-line-container{
+        font-size: 12px;
+    }
+    .finger-bottom-slider{
+        top: -68px;
+        left: 15px;
+        max-width: 42px;
+    }
+    .third-section{
+        padding-bottom: 15px;
+    }
+    .portfolio-title-text {
+        font-size: 20px;
+    }
+    .experience-wrap {
+        padding-top: 90px;
+    }
+    .clients-section-title-our {
+        position: relative;
+        top: -6px;
+    }
+    .clients-section-title-desc {
+        position: relative;
+        top: -18px;
+        max-width: 250px;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .plan-container {
+        padding-top: 83px;
+    }
+    .guarantee-section-decor{
+        display: none;
+    }
+    .top-badge{
+        max-width: 80px;
+        width: 100%;
+        left: -15px;
+        position: relative;
+    }
+}
+@media screen and (min-width: 1377px){
+    .guarantee-section-wrapper{
+        margin-top: 111px;
+    }
+    .line-container-faq{
+        max-width: 545px;
+        margin-left: 20px;
+    }
+    .top-badge{
+        width: 100%;
+        max-width: 200px;
+        left: -32px;
+        top: -9px;
+        position: relative;
+    }
+    .guarantee-desc{
+        font-size: 40px;
+        letter-spacing: 1px;
+        line-height: 54px;
+        font-weight: 600;
+        max-width: 1356px;
+        margin-top: 26px;
+    }
+    .faq-section{
+        padding-top: 19px;
+    }
+    .faq-wrapper-drop{
+        margin-top: 97px;
+    }
+    .team-section-container{
+        margin-top: 197px;
+    }
+}
+@media screen and (max-width: 1376px){
+    .line-container-faq{
+        max-width: 90px;
+        margin-left: 5px;
+    }
+}

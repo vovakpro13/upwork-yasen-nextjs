@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-function DropDown({number}) {
+function DropDown({number, description}) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
@@ -13,11 +13,11 @@ function DropDown({number}) {
       <div className="title flex justify-between items-center xl:h-[58px] w-full  ">
         <p>
           <span className="text-[#CDE1DB] font-donpoligrafbum text-xs sm:text-lg xl:text-[26px] ">
-            {number}.
+            0{number}.
           </span>{" "}
           {""}
           <span className="font-semibold text-[10px] sm:text-lg xl:text-2xl pl-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            {description}
           </span>
         </p>
         <p

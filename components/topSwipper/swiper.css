@@ -161,4 +161,14 @@
     .slide-title, .slide-description{
         font-size: 12px;
     }
+    .slide-description{
+        width: 100%;
+    }
+    .finger-packges-slider{
+        position: relative;
+        left: -11px;
+        top: 76px;
+        max-width: 42px;
+        z-index: 100;
+    }
 }

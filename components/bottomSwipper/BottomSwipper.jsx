@@ -32,7 +32,7 @@ const BottomSwiper = () => {
     console.log(activeIndex);
     return (
         <>
-            <div className="finger-packges-slider relative flex">
+            <div className="finger-bottom-slider relative flex">
                 <Image src="/flick-to-left 3.svg" alt="scroll" width={63} height={56} className="finger"/>
             </div>
             <Swiper

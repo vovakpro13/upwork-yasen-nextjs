@@ -62,7 +62,23 @@ const MySwiper = () => {
 
     const [activeSlide, setActiveSlide] = useState(slides[0]);
 
-
+    const breakpoints = {
+        640: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 3
+        },
+        1377: {
+            slidesPerView: 4
+        },
+        1600: {
+            slidesPerView: 5
+        },
+    };
 
     const handleSlideChange = (swiper) => {
         const activeIndex = swiper.activeIndex;
@@ -89,9 +105,9 @@ const MySwiper = () => {
         }
     };
     const windowWidth = window.innerWidth;
-    const slideWidth = 260; // Ширина кожного слайда (в пікселях)
-    const containerWidth = windowWidthState; // Ширина контейнера слайдера (в пікселях)
-    const slidesPerView = Math.floor(containerWidth / slideWidth); // Розрахунок кількості видимих слайдів
+    // const slideWidth = 260; // Ширина кожного слайда (в пікселях)
+    // const containerWidth = windowWidthState; // Ширина контейнера слайдера (в пікселях)
+    // const slidesPerView = Math.floor(containerWidth / slideWidth); // Розрахунок кількості видимих слайдів
     useEffect(() => {
         setWindowWidthState(windowWidth)
     }, [windowWidthState, windowWidth])
@@ -152,14 +168,14 @@ const MySwiper = () => {
                 // loop={true}
                 mousewheel={true}
                 spaceBetween={10}
-                slidesPerView={slidesPerView}
+                // slidesPerView={slidesPerView}
                 initialSlide={0}
                 centeredSlides={true}
                 navigation={{
                     prevEl: '.custom-prev',
                     nextEl: '.custom-next',
                 }}
-                // breakpoints={breakpoints}
+                breakpoints={breakpoints}
                 // pagination={{ clickable: true }}
                 // scrollbar={{draggable: true}}
                 scrollbar={{ hide: true }}

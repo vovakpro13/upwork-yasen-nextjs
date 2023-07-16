@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useEffect, useRef, useState} from "react";
 import { Suspense } from "react";
 import { useLoader, Canvas, useThree } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Goldman } from "next/font/google";
+import Preloader from "@/components/ui/Preloader";
 if (typeof window !== 'undefined') {
   window.mobileAndTabletCheck = function () {
     let check = false;
@@ -14,8 +15,19 @@ if (typeof window !== 'undefined') {
   };
 }
 const Wolf = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const gltf = useRef();
+
+  useEffect(() => {
+    const loader = new GLTFLoader();
+    loader.load('/wolf/textured wolf v2.gltf', (gltfResult) => {
+      gltf.current = gltfResult;
+      setIsLoading(false);
+    });
+  }, []);
   const Model = () => {
     const gltf = useLoader(GLTFLoader, "/wolf/textured wolf v2.gltf");
+
     const { size } = useThree();
     gltf.scene.children[0].position.set(0,-0.002,0);
     if (typeof window !== 'undefined') {
@@ -32,42 +44,44 @@ const Wolf = () => {
 
 
     return (
-      <>
-        <primitive
-          dispose={null}
-          object={gltf.scene}
-        />
-      </>
+        <>
+          <primitive
+              dispose={null}
+              object={gltf.scene}
+          />
+        </>
     );
   };
+
   return (
     <div className="h-full w-full relative z-1">
-      <Canvas
-        className="z-50"
-        shadows
-        dpr={[1, 2]}
-        camera={{ position: [0, 9, 15], fov: 40 }}
+      {isLoading ? <Preloader /> : <Canvas
+          className="z-50"
+          shadows
+          dpr={[1, 2]}
+          camera={{ position: [0, 9, 15], fov: 40 }}
       >
         <ambientLight intensity={0.5} />
         <spotLight
-          intensity={0.3}
-          angle={1}
-          penumbra={8}
-          position={[8, 8, 10]}
+            intensity={0.3}
+            angle={1}
+            penumbra={8}
+            position={[8, 8, 10]}
         />
 
         <Suspense>
           <Model />
           <Environment preset="city" />
         </Suspense>
-        <OrbitControls 
-          enableDamping={false} 
-          enablePan={false} enableZoom={false} 
-          maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2} 
-          maxAzimuthAngle={Math.PI/3} minAzimuthAngle={-Math.PI/3}
-          rotateSpeed={0.2}
+        <OrbitControls
+            enableDamping={false}
+            enablePan={false} enableZoom={false}
+            maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2}
+            maxAzimuthAngle={Math.PI/3} minAzimuthAngle={-Math.PI/3}
+            rotateSpeed={0.2}
         />
-      </Canvas>
+      </Canvas>}
+
     </div>
   );
 };

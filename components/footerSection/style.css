@@ -8,9 +8,43 @@
 .footer-social:hover{
     transform: scale(1.2);
 }
-.footer-navbar ul li a{
+.section-footer-navbar ul li a{
     transition: .3s;
 }
-.footer-navbar ul li a:hover{
+.section-footer-navbar ul li a:hover{
     opacity: .7;
+}
+@media screen and (min-width: 1101px){
+    .nav-contact-info{
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .section-footer-navbar{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .nav-contact-info.tel{
+        order: 1;
+    }
+    .nav-contact-info.soc{
+        margin-bottom: 20px;
+    }
+    .footer-section{
+        padding: 30px 36px 16px;
+    }
+    .nav-links{
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .footer-nav-item, .nav-links li{
+        margin-left: 22px;
+    }
+    .footer-nav-item:first-of-type, .nav-links li:first-of-type{
+        margin-left: 0;
+    }
 }

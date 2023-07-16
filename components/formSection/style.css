@@ -81,20 +81,20 @@
     background: #fff;
 }
 [type="radio"]:not(:checked) + label:before{
-    border: 1px solid #626262;
+    border: 2px solid #626262;
 }
 [type="radio"]:checked + label:before{
-    border: 1px solid #51C14F;
+    border: 2px solid #51C14F;
 }
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background: #51C14F;
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 5px;
+    left: 5px;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -120,8 +120,6 @@ label.label-checkbox {
     color: #212121;
     position: relative;
     font-size: 21px;
-    top: -18px;
-    left: 3px;
     cursor: pointer;
 }
 
@@ -134,6 +132,7 @@ input.item-checkbox {
 label.label-checkbox > span {
     width: 20px;
     height: 20px;
+    flex: 0 0 20px;
     display: flex;
     justify-content: center;
     border: 2px solid #212121;
@@ -148,12 +147,19 @@ input.item-checkbox:checked + label.label-checkbox > span {
 input.item-checkbox:checked + label.label-checkbox{
     color: #51c14f;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    box-shadow: 0 0 0 30px #fff inset !important;
+}
+
 
 input.item-checkbox:checked + label.label-checkbox > span::before {
     content: '';
     position: absolute;
-    top: 16px;
-    left: 6px;
+    top: 9px;
+    left: 4px;
     border-right: 2px solid transparent;
     border-bottom: 2px solid transparent;
     transform: rotate(45deg);
@@ -212,7 +218,9 @@ input.item-checkbox:checked + label.label-checkbox > span::before {
 }
 
 /*custom checkbox end*/
-@media screen and (min-width: 1441px){
+
+
+@media screen and (min-width: 1771px){
     .form-title{
         font-size: 56px;
     }
@@ -220,6 +228,29 @@ input.item-checkbox:checked + label.label-checkbox > span::before {
         font-size: 46px;
     }
 }
+@media screen and (max-width: 1770px){
+    .form-title, .form-caption{
+        font-size: 46px;
+    }
+    .form-title-do{
+        font-size: 40px;
+    }
+    .form-send-agree-wrap, .form-radio-wrap{
+        gap: 0;
+    }
+    label.label-checkbox, .form-radio-wrap label {
+        font-size: 14px;
+    }
+    label.label-checkbox {
+        top: -4px;
+    }
+}
+@media screen and (max-width: 1500px){
+    .form-title, .form-caption {
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width: 1440px){
     .form-title{
         font-size: 36px;
@@ -229,8 +260,92 @@ input.item-checkbox:checked + label.label-checkbox > span::before {
     }
 }
 
+@media screen and (max-width: 1279px){
+    .form-radio-wrap{
+        margin-bottom: 50px;
+    }
+    .form-item {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .form-send-agree-wrap{
+        flex-direction: column;
+    }
+    .btn-send{
+        margin: 33px auto 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .form-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-section{
+        padding: 68px;
+    }
+    .form-title{
+        margin-bottom: 29px;
+    }
+    .form-caption{
+        max-width: 270px;
+        font-size: 26px;
+        margin-bottom: 52px;
+    }
+    .form-questions{
+        max-width: 190px;
+        margin-left: 50px;
+    }
+    .form-caption span:last-of-type{
+        margin-left: 20px;
+    }
+    .left-section{
+        margin-bottom: 108px;
+    }
+    .form-dots-pic{
+        max-width: 68px;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .form-title {
+        font-size: 26px;
+    }
+    .form-section {
+        padding: 37px;
+    }
+    .form-dots-pic {
+        max-width: 30px;
+        right: 0;
+        top: -27px;
+    }
+}
+@media screen and (max-width: 599px){
+    .form-radio-wrap{
+        flex-direction: column;
+    }
+    .form-radio{
+        margin-left: 0 !important;
+        margin-top: 30px;
+    }
+}
 @media screen and (max-width: 540px){
     .form-title{
         font-size: 20px;
+    }
+    .left-section{
+        margin-bottom: 40px;
+    }
+    .form-title{
+        margin-bottom: 20px;
+    }
+    .form-caption{
+        max-width: 170px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .form-item {
+        font-size: 14px;
     }
 }

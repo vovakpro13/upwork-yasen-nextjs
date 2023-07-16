@@ -133,6 +133,12 @@
         position: relative;
     }
 }
+
+@media screen and (max-width: 430px){
+    .right-container-ream{
+        gap: 6vw;
+    }
+}
 @media screen and (min-width: 1377px){
     .guarantee-section-wrapper{
         margin-top: 111px;

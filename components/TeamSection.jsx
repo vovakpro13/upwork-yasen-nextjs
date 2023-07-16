@@ -75,7 +75,7 @@ function TeamSection() {
             Landing pages & online shops optimized for higher conversion rate
           </div>
         </div>
-        <div className="right-container flex flex-wrap justify-center items-end xl:w-[750px] gap-10 2xl:gap-20 ">
+        <div className="right-container right-container-ream flex flex-wrap justify-center items-end xl:w-[750px] gap-10 2xl:gap-20 ">
           <div className="person-container flex flex-col items-center gap-2">
             <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image

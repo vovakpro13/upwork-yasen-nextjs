@@ -101,7 +101,7 @@ function FormSection() {
                         alt="rectangle"
                         width={94}
                         height={81}
-                        className="absolute xl:right-[37%] bottom-0"
+                        className="absolute xl:right-[37%] bottom-0 form-dots-pic"
                     />
                 </div>
                 <div className="right-section relative">
@@ -110,7 +110,7 @@ function FormSection() {
                         alt="rectangle"
                         width={133}
                         height={10}
-                        className="left-line-form absolute top-[18px] right-[-16%] xl:inline hidden"
+                        className="left-line-form absolute top-[18px] right-[-133px] xl:inline hidden"
                     />
                     <form action="https://api.web3forms.com/submit" method="POST" id="form"
                           className="needs-validation" noValidate>
@@ -145,21 +145,21 @@ function FormSection() {
                             </div>
                         </div>
 
-                        <div className="flex gap-10 xl:mb-[95px] space-x-4 pt-[10px]">
+                        <div className="flex gap-10 xl:mb-[95px] space-x-4 pt-[10px] form-radio-wrap">
                             <div className="">
                                 <input className="item-radio" type="radio" id="test1" name="radio-group" checked />
                                 <label className="font-montserrat text-[18px]" htmlFor="test1">{'I don\'t have a website'}</label>
                             </div>
-                            <div className="xl:ml-[41px]">
+                            <div className="xl:ml-[41px] form-radio">
                                 <input className="item-radio"  type="radio" id="test2" name="radio-group" />
                                 <label className="font-montserrat text-[18px]" htmlFor="test2">I have a website and want to order a review</label>
                             </div>
                         </div>
-                        <div className="flex gap-10 mb-6 space-x-4 justify-between">
-                            <div className="">
+                        <div className="flex gap-10 mb-6 justify-between form-send-agree-wrap">
+                            <div className="flex items-center">
                                 <input className="item-checkbox"  type="checkbox" id="one" />
                                 <label className="label-checkbox font-montserrat" htmlFor="one">
-                                    <span></span> I agree to the rules of personal data processing
+                                    <span className="relative"></span> I agree to the rules of personal data processing
                                 </label>
                             </div>
                             <button type="submit"

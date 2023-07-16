@@ -120,7 +120,7 @@ const MySwiper = () => {
         }
         // console.log(scrollValue);
     };
-    console.log(activeIndex);
+    // console.log(activeIndex);
     return (
         <>
             <div className="scrool swiper-scroll w-full flex justify-end items-center">

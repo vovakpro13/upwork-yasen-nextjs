@@ -40,7 +40,7 @@ const HeadSection = () => {
                 </span>
               <span className="lg:translate-x-[31px] block">websites</span></h1>
             </div>
-            <p className="font-montserrat mt-8 leading-[50px] text-primary sm:text-[16px] lg:text-[22px] text-caption xl:font-light max-w-xs sm:max-w-md lg:max-w-[570px] xl:max-w-[620px] title-text">
+            <p className="font-montserrat mt-8 xl:leading-[50px] text-primary sm:text-[16px] lg:text-[36px] text-caption xl:font-light max-w-xs sm:max-w-md lg:max-w-[570px] xl:max-w-[620px] title-text">
               We work with you until the site starts selling!
             </p>
           </div>

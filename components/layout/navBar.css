@@ -50,6 +50,29 @@
     outline: none;
     outline: 0;
 }
+.line1, .line2, .line3{
+    /*transition: .3s;*/
+}
+.show-menu-wrap .line3{
+    opacity: 0;
+}
+.show-menu-wrap .line1{
+    transform: rotate(49deg) translateX(1px) translateY(9px);
+    transform-origin: center;
+}
+.show-menu-wrap .line2{
+    transform: rotate(138deg) translateX(1px);
+    transform-origin: center;
+}
+.wrapper-burger-menu ul li{
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: .6s;
+}
+.open-menu ul li{
+    transform: translateX(0px);
+    opacity: 1;
+}
 
 @media screen and (min-width: 1921px){
     .title-h1{

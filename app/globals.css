@@ -103,7 +103,11 @@
 /*-----------------------------*/
 
 
-
+@media screen and (max-width: 1549px) {
+  .burger-wrap{
+    top: 37px;
+  }
+}
 @media screen and (max-width: 1100px){
   .portfolio-title-our{
     font-size: 18px;
@@ -142,6 +146,12 @@
 }
 
 
+@media screen and (max-width: 1023px){
+  .burger-wrap {
+    top: 97px;
+    left: 82px;
+  }
+}
 @media screen and (max-width: 1024px){
   .info-container {
     right: 60px;
@@ -153,6 +163,12 @@
   }
 }
 
+@media screen and (max-width: 540px){
+  .burger-wrap {
+    top: 22px;
+    left: 43px;
+  }
+}
 @media screen and (max-width: 639px){
   .text-end-custom{
     font-size: 14px;

@@ -1,9 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import './navBar.css'
-
+import BurgerNavbar from "@/components/layout/BurgerNavBar";
 const Navbar = () => {
+
   return (
     <div className="w-full">
       <nav className="navbar w-full flex justify-between bg-transparent z-50 fixed overflow-hidden lg:px-32">
@@ -15,15 +16,8 @@ const Navbar = () => {
             height={10}
             className="absolute -bottom-[5px] right-[23px] lg:right-28"
           />
-          <div className="menu-container w-[102px] lg:border-r-[1px] border-r-primary relative top-[8px] left-[2px]">
-            <Image
-              src="/menu.svg"
-              alt="menu"
-              width={38}
-              height={26}
-              className="burger-menu"
-            />
-          </div>
+
+
           <Link href="tel:+1234567890" className="tel hover-nav text-white font-montserrat font-semibold hidden lg:block top-[5px] relative">
             +1 234 56 78 90
           </Link>
@@ -94,6 +88,7 @@ const Navbar = () => {
           />
         </div>
       </nav>
+      <BurgerNavbar />
     </div>
   );
 };

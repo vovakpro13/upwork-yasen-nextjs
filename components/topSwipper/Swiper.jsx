@@ -16,7 +16,7 @@ const MySwiper = () => {
     const [slideCount, setSlideCount] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
     const [scrollValue, setScrollValue] = useState(2);
     const [activeIndex, setActiveIndex] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-    const [windowWidthState, setWindowWidthState] = useState(''); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    const [windowWidthState, setWindowWidthState] = useState(0);
     const slides = [
         {
             id: 0,
@@ -105,8 +105,6 @@ const MySwiper = () => {
             const windowWidth = window.innerWidth;
             setWindowWidthState(windowWidth)
         }
-
-
     }, [windowWidthState])
 
     const   handleChange = (swiper) => {

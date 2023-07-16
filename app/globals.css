@@ -26,6 +26,13 @@
   cursor: pointer;
 }
 
+.hover-nav{
+  transition: .3s;
+}
+.hover-nav:hover{
+  opacity: .7;
+}
+
 /*-----------------------------*/
 /*         portfoliio          */
 /*-----------------------------*/

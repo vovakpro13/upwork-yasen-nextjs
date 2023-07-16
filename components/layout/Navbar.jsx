@@ -24,7 +24,7 @@ const Navbar = () => {
               className="burger-menu"
             />
           </div>
-          <Link href="tel:+1234567890" className="tel text-white font-montserrat font-semibold hidden lg:block top-[5px] relative">
+          <Link href="tel:+1234567890" className="tel hover-nav text-white font-montserrat font-semibold hidden lg:block top-[5px] relative">
             +1 234 56 78 90
           </Link>
         </div>

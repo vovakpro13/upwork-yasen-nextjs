@@ -105,8 +105,8 @@ const slides = [
     },
 ];
 const breakpoints = {
-    640: {
-        slidesPerView: 1.5
+    540: {
+        slidesPerView: 1.15
     },
     768: {
         slidesPerView: 2.5

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.animate-bounce-arrow{
+  animation: animate-bounce-arrow 1.3s ease-in-out infinite;
+}
 .green-underline {
   text-decoration-color: #44937d;
 }
@@ -306,6 +309,19 @@
     100% {
       transform: translateX(calc(100% - 496px)) rotate(-5.68deg);
     }
+}
+@keyframes animate-bounce-arrow{
+  0% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(.8,0,1,1);
+    }
+    50% {
+      transform:  translateY(20%);
+      animation-timing-function: cubic-bezier(0,0,.2,1);
+    }
+  100% {
+    transform: translateY(-25%);
+  }
 }
 
 /* Package Swiper Table */

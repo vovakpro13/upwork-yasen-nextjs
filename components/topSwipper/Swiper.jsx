@@ -150,10 +150,6 @@ const MySwiper = () => {
         }
     };
 
-
-    // const slideWidth = 260; // Ширина кожного слайда (в пікселях)
-    // const containerWidth = windowWidthState; // Ширина контейнера слайдера (в пікселях)
-    // const slidesPerView = Math.floor(containerWidth / slideWidth); // Розрахунок кількості видимих слайдів
     useEffect(() => {
         if (typeof window !== 'undefined') {
             // Code that references the window object
@@ -174,9 +170,7 @@ const MySwiper = () => {
         } else {
             setScrollValue((302 / slideCount) * swiper.realIndex);
         }
-        // console.log(scrollValue);
     };
-    // console.log(activeIndex);
     return (
         <>
             <div className="scrool swiper-scroll w-full flex justify-end items-center">
@@ -216,10 +210,8 @@ const MySwiper = () => {
             <Swiper
                 onActiveIndexChange={handleChange}
                 modules={[Navigation, Pagination, Scrollbar]}
-                // loop={true}
                 mousewheel={true}
                 spaceBetween={10}
-                // slidesPerView={slidesPerView}
                 initialSlide={1}
                 centeredSlides={true}
                 navigation={{
@@ -227,8 +219,6 @@ const MySwiper = () => {
                     nextEl: '.custom-next',
                 }}
                 breakpoints={breakpoints}
-                // pagination={{ clickable: true }}
-                // scrollbar={{draggable: true}}
                 scrollbar={{ hide: true }}
                 onSwiper={(swiper) => setSlideCount(swiper.slides.length)}
                 className="!h-[480px] !w-full portfolio-slider"

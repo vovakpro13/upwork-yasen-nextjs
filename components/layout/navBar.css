@@ -51,17 +51,17 @@
     outline: 0;
 }
 .line1, .line2{
-    transition: .3s;
+    transition: .1s;
 }
 .show-menu-wrap .line3{
     opacity: 0;
 }
 .show-menu-wrap .line1{
-    transform: rotate(49deg) translateX(1px) translateY(9px);
+    transform: rotate(49deg) translateX(0) translateY(9px);
     transform-origin: center;
 }
 .show-menu-wrap .line2{
-    transform: rotate(138deg) translateX(1px);
+    transform: rotate(133deg) translateX(0px);
     transform-origin: center;
 }
 .wrapper-burger-menu ul li{

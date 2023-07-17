@@ -20,7 +20,7 @@ const slides = [
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'UAI. Underwater acoustics international',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://uaisolutions.com/',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
     {
@@ -30,7 +30,7 @@ const slides = [
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Бира Батя Прошек',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://proshek-beer.com/',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
     {
@@ -40,7 +40,7 @@ const slides = [
         infoFlag: '/portfolio/flag2.svg',
         infoTitle: 'Loren Networks',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://lorennetworks.com/',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
     {
@@ -50,7 +50,7 @@ const slides = [
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Grand Royale',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://grandroyale.bg/',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
     {
@@ -60,7 +60,7 @@ const slides = [
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'MyCopywriter.io',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://mycopywriter.io/',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
     {
@@ -70,7 +70,7 @@ const slides = [
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'GD Media Ltd.',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://www.gdmotion.com/',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
     {
@@ -80,7 +80,7 @@ const slides = [
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Conso4s',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://conso4s.com/',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
     {
@@ -90,7 +90,7 @@ const slides = [
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Beatclub',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://beatclub.com/',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
     {
@@ -100,7 +100,7 @@ const slides = [
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Camissafashion',
         infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
-        link: 'https://www.facebook.com/',
+        link: 'https://camissafashion.com/ ',
         technologies: 'HTML, CSS, NODE JS, React JS',
     },
 ];
@@ -189,12 +189,12 @@ const MySwiper = () => {
                 </div>
                 <div className="swiper-control-wrap flex relative">
                     <div className="swiper-count flex ml-5 gap-3">
-                        <Image src="/arrow.svg" alt="scroll" className="custom-prev" onClick={goPrev}width={13} height={2}/>
+                        <Image src="/arrow.svg" alt="scroll" className="custom-prev cursor-pointer" onClick={goPrev}width={13} height={2}/>
                         <p className="text-2xl font-medium self-center swiper-count-number">
                             <span className="text-primary"> {activeIndex + 1}</span>/
                             {slideCount}
                         </p>
-                        <Image src="/arrowr.svg" alt="arrow" className="custom-next" onClick={goNext} width={13} height={2}/>
+                        <Image src="/arrowr.svg" alt="arrow" className="custom-next cursor-pointer" onClick={goNext} width={13} height={2}/>
                     </div>
                     <div className="wrap-pic-hand relative flex">
                         <Image
@@ -249,7 +249,7 @@ const MySwiper = () => {
                                     {activeIndex === slide.id ? slide.infoDescription : `${slide.infoDescription.slice(0, 46)}...`}
                                 </div>
                             </div>
-                            {activeIndex === slide.id && <Link href={slide.link} type="submit"
+                            {activeIndex === slide.id && <Link href={slide.link} target="_blank" type="submit"
                                                                className="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none link-portfolio">
                                 <Image
                                     src="/portfolio/btn.svg"

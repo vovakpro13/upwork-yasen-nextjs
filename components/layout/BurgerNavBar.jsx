@@ -31,7 +31,7 @@ const BurgerNavbar = () => {
                     <svg className="burger-menu" width="38" height="26" viewBox="0 0 38 26" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path className="line line1" d="M30 2L6 2" stroke="#51C14F" strokeWidth="4" strokeLinecap="round"/>
-                        <path className="line line2" d={`M3${openMenu ? '0' : '6'} 13.1699H31M2 13.1699H19`} stroke="#51C14F" strokeWidth="4"
+                        <path className="line line2" d={`M3${openMenu ? '0' : '6'} 13.1699H31M2 13.1699H19`} stroke="#51C14F" strokeWidth={`${openMenu ? '3' : '4'}`}
                               strokeLinecap="round"/>
                         <path className="line line3" d="M22 24L10 24" stroke="#51C14F" strokeWidth="4" strokeLinecap="round"/>
                     </svg>

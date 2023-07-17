@@ -18,15 +18,8 @@ const PackagesSwipper = () => {
   console.log(activeIndex);
   return (
     <>
-      <div className="finger-packges-slider relative flex 911">
+      <div className="finger-packges-slider relative flex">
         <Image src="/flick-to-left 3.svg" alt="scroll" width={63} height={56} />
-        {/*<Image*/}
-        {/*  src="/fingerarrow.svg"*/}
-        {/*  alt="scroll"*/}
-        {/*  width={43}*/}
-        {/*  height={56}*/}
-        {/*  className="absolute -top-1 left-9 rotate-12"*/}
-        {/*/>*/}
       </div>
       <div className="swiper-container swiper-container-packages !w-full flex justify-center">
         <Swiper
@@ -35,19 +28,19 @@ const PackagesSwipper = () => {
           spaceBetween={50}
           slidesPerView={1}
           onActiveIndexChange={handleChange}
-          className=" !h-[1168px] !w-[100!] !relative !z-30 "
+          className="!w-[100!] !relative !z-30 "
           modules={[Navigation, Pagination, Scrollbar]}
         >
           <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
             <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
               <Image
-                src="/large-icon.svg"
+                src="/icon-1f.svg"
                 alt="line"
-                width={84}
+                width={95}
                 height={100}
-                className="relative z-10 w-[125px] xl:w-[120px] "
+                className="relative z-10 w-[95px] icon-f"
               />
-              <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-20 top-20 sm:top-7 text-[45px] sm:text-[100px] font-bold z-0 ">
+              <p className="shadoww text-[#DCEEE9] back-words absolute tracking-[15px] left-9 sm:left-20 top-20 sm:top-7 text-[45px] sm:text-[100px] font-bold z-0 ">
                 LARGE
               </p>
               <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px] -top-6 ">
@@ -257,13 +250,13 @@ const PackagesSwipper = () => {
           <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
             <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
               <Image
-                src="/medium (2).svg"
+                src="/icon-2f.svg"
                 alt="line"
-                width={84}
+                width={95}
                 height={100}
-                className="relative z-10 w-[125px] xl:w-[120px] "
+                className="relative z-10 w-[95px] icon-f "
               />
-              <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-9 top-20 sm:top-7 text-[45px] sm:text-[100px] font-bold z-0 ">
+              <p className="shadoww text-[#DCEEE9] back-words absolute tracking-[15px] left-9 sm:left-9 top-20 sm:top-7 text-[45px] sm:text-[100px] font-bold z-0 ">
                 MEDIUM
               </p>
               <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px] -top-6 ">
@@ -404,13 +397,13 @@ const PackagesSwipper = () => {
           <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
             <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
               <Image
-                src="/small (2).svg"
+                src="/icon-3f.svg"
                 alt="line"
-                width={168}
-                height={160}
-                className="relative z-10 w-[125px] xl:w-[168px] "
+                width={95}
+                height={100}
+                className="relative z-10 w-[95px] icon-f"
               />
-              <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-9 top-20 sm:top-7 text-[45px] sm:text-[100px] font-bold z-0 ">
+              <p className="shadoww text-[#DCEEE9] back-words absolute tracking-[15px] top-20 sm:top-7 text-[45px] sm:text-[100px] font-bold z-0 ">
                 SMALL
               </p>
               <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px] -top-6 ">

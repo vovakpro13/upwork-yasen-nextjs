@@ -7,11 +7,11 @@ const Plans = () => {
       <div className="font-montserrat w-full max-w-[540px] h-[985px] sm:h-[1075px] xl:h-[1168px] bg-white ">
         <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image
-            src="/large-icon.svg"
+            src="/icon-1f.svg"
             alt="line"
             width={84}
             height={100}
-            className="relative z-10 w-[125px] xl:w-[120px] "
+            className="relative z-10 w-[125px] xl:w-[120px] icon-f "
           />
           <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
             LARGE
@@ -217,11 +217,11 @@ const Plans = () => {
       <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
         <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image
-            src="/portfolio/larg-icon-2.png"
+            src="/icon-2f.svg"
             alt="line"
             width={84}
             height={100}
-            className="relative z-10 w-[125px] xl:w-[120px] "
+            className="relative z-10 w-[125px] xl:w-[120px] icon-f "
           />
           <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
             MEDIUM
@@ -356,13 +356,13 @@ const Plans = () => {
         </div>
       </div>
       <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
-        <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-0">
+        <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image
-            src="/portfolio/larg-icon-3.png"
+            src="/icon-3f.svg"
             alt="line"
             width={168}
             height={160}
-            className="relative z-10 w-[125px] xl:w-[158px] "
+            className="relative z-10 w-[125px] xl:w-[158px] icon-f"
           />
           <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
             SMALL

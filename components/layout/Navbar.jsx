@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const cls = visible ? "visible-nav" : "hidden-nav";
   return (
-    <div className={`${cls} w-full fixed z-[101] wrapper-nav-global`}>
+    <div className={`${cls} w-full fixed z-[101] wrapper-nav-global md:h-[128px] h-[80px]`}>
       <nav className="navbar w-full flex justify-between bg-transparent z-50 fixed overflow-hidden lg:px-32">
         <div className="left-container left-container-custom flex items-center relative w-[43%] lg:w-[41%] border-b-[1px] border-b-primary relative z-10">
           <Image

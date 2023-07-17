@@ -9,21 +9,25 @@ import TeamSection from "../components/TeamSection";
 import FormSection from "../components/formSection/FormSection";
 import FooterSection from "../components/footerSection/FooterSection";
 import Footer from "../components/footer/Footer";
+import Navbar from "@/components/layout/Navbar";
 
 export default function Home() {
   return (
-    <main className="w-full overflow-x-hidden">
-      <HeadSection />
-      <SecondSection />
-      <ThirdSection />
-      <ClientsSection />
-      <PlanSection />
-      <GuaranteeSection />
-      <FaqSection />
-      <TeamSection />
-      <FormSection />
-      <FooterSection />
-      <Footer />
-    </main>
+      <>
+          <Navbar />
+          <main className="w-full overflow-x-hidden">
+              <HeadSection />
+              <SecondSection />
+              <ThirdSection />
+              <ClientsSection />
+              <PlanSection />
+              <GuaranteeSection />
+              <FaqSection />
+              <TeamSection />
+              <FormSection />
+              <FooterSection />
+              <Footer />
+          </main>
+      </>
   );
 }

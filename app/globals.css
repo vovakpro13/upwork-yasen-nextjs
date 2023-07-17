@@ -215,7 +215,7 @@
 }
 @media screen and (max-width: 1023px){
   .burger-wrap {
-    top: 97px;
+    top: 97px !important;
     left: 82px;
   }
 }
@@ -232,7 +232,7 @@
 
 @media screen and (max-width: 540px){
   .burger-wrap {
-    top: 22px;
+    top: 22px !important;
     left: 43px;
   }
 }

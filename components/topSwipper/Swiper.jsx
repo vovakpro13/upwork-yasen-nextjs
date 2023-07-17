@@ -12,6 +12,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/mousewheel";
 import "./swiper.css";
 import "swiper/css";
+import Preloader from "@/components/ui/Preloader";
 const slides = [
     {
         id: 0,
@@ -132,9 +133,8 @@ const MySwiper = () => {
     const [scrollValue, setScrollValue] = useState(2);
     const [activeIndex, setActiveIndex] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
     const [windowWidthState, setWindowWidthState] = useState(0);
-
+    // const [isLoading, setIsLoading] = useState(true);
     // const [activeSlide, setActiveSlide] = useState(slides[0]);
-
 
     const swiperRef = useRef(null);
 
@@ -149,6 +149,7 @@ const MySwiper = () => {
             swiperRef.current.swiper.slideNext();
         }
     };
+
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -263,6 +264,7 @@ const MySwiper = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
         </>
     );
 };

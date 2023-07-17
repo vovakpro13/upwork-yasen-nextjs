@@ -70,10 +70,20 @@
     transition: .6s;
 }
 .open-menu ul li{
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
 }
+.visible-nav{
 
+}
+
+.wrapper-nav-global{
+    transition: .3s ease-in-out;
+    top: 0;
+}
+.hidden-nav{
+    top: -100%;
+}
 @media screen and (min-width: 1921px){
     .title-h1{
         font-size: 48px;

@@ -1,12 +1,32 @@
-import React from "react";
+"use client";
+import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import './navBar.css'
 import BurgerNavbar from "@/components/layout/BurgerNavBar";
 const Navbar = () => {
+  const [position, setPosition] = useState(0)
+  const [visible, setVisible] = useState(true)
+  useEffect(()=> {
+    if (typeof window !== 'undefined') {
+      const handleScroll = () => {
 
+        let moving = window.scrollY;
+
+        setVisible(position > moving);
+        setPosition(moving)
+      };
+      window.addEventListener("scroll", handleScroll);
+      return(() => {
+        window.removeEventListener("scroll", handleScroll);
+      })
+    }
+
+  })
+
+  const cls = visible ? "visible-nav" : "hidden-nav";
   return (
-    <div className="w-full">
+    <div className={`${cls} w-full fixed z-[101] wrapper-nav-global`}>
       <nav className="navbar w-full flex justify-between bg-transparent z-50 fixed overflow-hidden lg:px-32">
         <div className="left-container left-container-custom flex items-center relative w-[43%] lg:w-[41%] border-b-[1px] border-b-primary relative z-10">
           <Image

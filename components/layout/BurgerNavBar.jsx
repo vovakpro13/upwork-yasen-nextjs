@@ -25,7 +25,7 @@ const BurgerNavbar = () => {
     }
 
     return (
-        <div className={`${openMenu ? 'show-menu-wrap' : 'w-0'} h-screen fixed top-0 left-0 z-[51]`}>
+        <div className={`${openMenu ? 'show-menu-wrap' : 'w-0'} h-screen relative top-0 left-0 z-[51]`}>
             <div className={`menu-container burger-wrap w-[102px] lg:border-r-[${openMenu ? '0' : '1px'}] border-r-primary relative top-[55px] left-[130px] fixed z-[90]`}>
                 <button className="menu outline-0 btn-menu" onClick={toggleMenu}>
                     <svg className="burger-menu" width="38" height="26" viewBox="0 0 38 26" fill="none"

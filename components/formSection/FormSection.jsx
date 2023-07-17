@@ -166,7 +166,7 @@ function FormSection() {
                                     className="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none btn-send">
                                 SEND
                                 <Image
-                                    src="/icon-form-send.svg"
+                                    src="/portfolio/icon-send-btn.svg"
                                     alt="rectangle"
                                     width={24}
                                     height={24}

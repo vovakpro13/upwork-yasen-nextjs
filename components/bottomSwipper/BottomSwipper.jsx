@@ -32,8 +32,8 @@ const BottomSwiper = () => {
     console.log(activeIndex);
     return (
         <>
-            <div className="finger-bottom-slider relative flex">
-                <Image src="/flick-to-left 3.svg" alt="scroll" width={63} height={56} className="finger"/>
+            <div className="finger-bottom-slider relative flex 33">
+                <Image src="/flick-to-left 3.svg" alt="scroll" width={63} height={56} className="finger relative"/>
             </div>
             <Swiper
                 // loop={true}
@@ -61,19 +61,16 @@ const BottomSwiper = () => {
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">01.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
               QUESTIONNAIRE 
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
+                    <p className="font-montserrat text-lg font-[500] mt-6 leading-7 w-96 slide-description">
                         It is a long established
-                        <span className="underline font-bold">
-              fact that a reader will be distracted
-            </span>
-                        by the readable content of a page when looking at its layout.
-                        <span className="underline">The point of using Lorem Ipsum</span>
+                        <span className="underline font-bold"> fact that a reader will be distracted </span> by the readable content of a page when looking at its layout.
+                        <span className="underline"> The point of using Lorem Ipsum</span>
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!h-96 px-6 !bg-white">
@@ -92,19 +89,16 @@ const BottomSwiper = () => {
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">02.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
               wireframe 
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
+                    <p className="font-montserrat text-lg font-[500] mt-6 leading-7 w-96 slide-description">
                         It is a long established
-                        <span className="underline font-bold">
-              fact that a reader will be distracted
-            </span>
-                        by the readable content of a page when looking at its layout.
-                        <span className="underline">The point of using Lorem Ipsum</span>
+                        <span className="underline font-bold"> fact that a reader will be distracted </span> by the readable content of a page when looking at its layout.
+                        <span className="underline"> The point of using Lorem Ipsum</span>
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!h-96 px-6 !bg-white">
@@ -123,20 +117,17 @@ const BottomSwiper = () => {
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">03.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
               copywriting 
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
-                        <p className="text-primary text-xl mb-2 -mt-2">No AI</p>
+                    <p className="font-montserrat text-lg font-[500] mt-6 leading-7 w-96 slide-description">
+                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold">No AI</p>
                         It is a long established
-                        <span className="underline font-bold">
-              fact that a reader will be distracted
-            </span>
-                        by the readable content of a page when looking at its layout.
-                        <span className="underline">The point of using Lorem Ipsum</span>
+                        <span className="underline font-bold"> fact that a reader will be distracted </span> by the readable content of a page when looking at its layout.
+                        <span className="underline"> The point of using Lorem Ipsum</span>
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!h-96 px-6 !bg-white">
@@ -155,20 +146,16 @@ const BottomSwiper = () => {
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="font-montserrat items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">04.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
               FIGMA DESIGN 
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
-                        <p className="text-primary text-xl mb-2 -mt-2">From scratch optimized for CRO</p>
-                        It is a long established
-                        <span className="underline font-bold">
-              fact that a reader will be distracted
-            </span>
-                        by the readable content of a page when looking at its layout.
-                        <span className="underline">The point of using Lorem Ipsum</span>
+                    <p className="text-lg font-[500] mt-6 leading-7 w-96 slide-description">
+                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold font-montserrat">From scratch optimized for CRO</p> It is a long established
+                        <span className="underline font-bold"> fact that a reader will be distracted </span> by the readable content of a page when looking at its layout.
+                        <span className="underline"> The point of using Lorem Ipsum</span>
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!h-96 px-6 !bg-white">
@@ -187,19 +174,15 @@ const BottomSwiper = () => {
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">05.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
               VIDEO 
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
-                        <p className="text-primary text-xl mb-2 -mt-2">With/without tutor</p>
-                        It is a long established
-                        <span className="underline font-bold">
-              fact that a reader will be distracted
-            </span>
-                        by the readable content of a page when looking at its layout.
+                    <p className="text-lg font-[500] mt-6 leading-7 w-96 slide-description font-montserrat">
+                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold">With/without tutor</p> It is a long established
+                        <span className="underline font-bold"> fact that a reader will be distracted </span> by the readable content of a page when looking at its layout.
                         <span className="underline">The point of using Lorem Ipsum</span>
                     </p>
                 </SwiperSlide>
@@ -219,13 +202,13 @@ const BottomSwiper = () => {
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">06.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
               development 
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
+                    <p className="font-montserrat text-lg font-[500] mt-6 leading-7 w-96 slide-description">
                         It is a long established fact that a reader will be distracted by the readable content of a page
                         when looking at its layout.
                         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
@@ -248,13 +231,13 @@ const BottomSwiper = () => {
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">07.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              SEO & SPEED 
+              SEO and SPEED
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
+                    <p className="font-montserrat text-lg font-[500] mt-6 leading-7 w-96 slide-description">
                         It is a long established fact that a reader will be distracted by the readable content of a page
                         when looking at its layout.
                         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
@@ -278,14 +261,14 @@ const BottomSwiper = () => {
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">08.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
               SOCIAL MEDIA GOOGLE ADS FB ADS IG ADS
 TIK TOK 
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
+                    <p className="font-montserrat text-lg font-[500] mt-6 leading-7 w-96 slide-description">
                         It is a long established fact that a reader will be distracted by the readable content of a page
                         when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                         distribution of letters, as opposed to using `Content here, content here`, making it look like
@@ -310,13 +293,13 @@ TIK TOK
                         className="w-1/2 "
                     />
 
-                    <p className="flex gap-4 mt-6 ">
+                    <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">09.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              FURTHER IMPROVEMENT & OPTIMIZATION
+              FURTHER IMPROVEMENT and OPTIMIZATION
             </span>
                     </p>
-                    <p className="text-lg font-semibold mt-6 leading-7 w-96 slide-description">
+                    <p className="font-montserrat text-lg font-[500] mt-6 leading-7 w-96 slide-description">
                         It is a long established fact that a reader will be distracted by the readable content of a page
                         when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
                         Distribution of letters, as opposed to using `Content here, content here`, making it look like

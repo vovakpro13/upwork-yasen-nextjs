@@ -4,6 +4,7 @@ import React, {useEffect, useRef, useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Pagination, Scrollbar} from "swiper";
 import Image from "next/image";
+import Link from "next/link";
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,74 +12,129 @@ import "swiper/css/scrollbar";
 import "swiper/css/mousewheel";
 import "./swiper.css";
 import "swiper/css";
-
+const slides = [
+    {
+        id: 0,
+        imageBig: '/portfolio/slide-1-big.png',
+        imageSmall: '/portfolio/slide-1-small.png',
+        infoFlag: '/portfolio/flag1.svg',
+        infoTitle: 'UAI. Underwater acoustics international',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+    {
+        id: 1,
+        imageBig: '/portfolio/slide-2-big.png',
+        imageSmall: '/portfolio/slide-2-small.png',
+        infoFlag: '/portfolio/flag1.svg',
+        infoTitle: 'Бира Батя Прошек',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+    {
+        id: 2,
+        imageBig: '/portfolio/slide-3-big.png',
+        imageSmall: '/portfolio/slide-3-small.png',
+        infoFlag: '/portfolio/flag2.svg',
+        infoTitle: 'Loren Networks',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+    {
+        id: 3,
+        imageBig: '/portfolio/slide-4-big.png',
+        imageSmall: '/portfolio/slide-4-small.png',
+        infoFlag: '/portfolio/flag1.svg',
+        infoTitle: 'Grand Royale',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+    {
+        id: 4,
+        imageBig: '/portfolio/slide-5-big.png',
+        imageSmall: '/portfolio/slide-5-small.png',
+        infoFlag: '/portfolio/flag1.svg',
+        infoTitle: 'MyCopywriter.io',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+    {
+        id: 5,
+        imageBig: '/portfolio/slide-6-big.png',
+        imageSmall: '/portfolio/slide-6-small.png',
+        infoFlag: '/portfolio/flag1.svg',
+        infoTitle: 'GD Media Ltd.',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+    {
+        id: 6,
+        imageBig: '/portfolio/slide-7-big.png',
+        imageSmall: '/portfolio/slide-7-small.png',
+        infoFlag: '/portfolio/flag1.svg',
+        infoTitle: 'Conso4s',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+    {
+        id: 7,
+        imageBig: '/portfolio/slide-8-big.png',
+        imageSmall: '/portfolio/slide-8-small.png',
+        infoFlag: '/portfolio/flag1.svg',
+        infoTitle: 'Beatclub',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+    {
+        id: 8,
+        imageBig: '/portfolio/slide-9-big.png',
+        imageSmall: '/portfolio/slide-9-small.png',
+        infoFlag: '/portfolio/flag1.svg',
+        infoTitle: 'Camissafashion',
+        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        link: 'https://www.facebook.com/',
+        technologies: 'HTML, CSS, NODE JS, React JS',
+    },
+];
+const breakpoints = {
+    640: {
+        slidesPerView: 1.5
+    },
+    768: {
+        slidesPerView: 2.5
+    },
+    1024: {
+        slidesPerView: 3.5
+    },
+    1377: {
+        slidesPerView: 4.5
+    },
+    1600: {
+        slidesPerView: 5.5
+    },
+    1900: {
+        slidesPerView: 6.5
+    },
+    2200: {
+        slidesPerView: 7.5
+    },
+};
 const MySwiper = () => {
     const [slideCount, setSlideCount] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
     const [scrollValue, setScrollValue] = useState(2);
     const [activeIndex, setActiveIndex] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
     const [windowWidthState, setWindowWidthState] = useState(0);
-    const slides = [
-        {
-            id: 0,
-            imageBig: '/portfolio/slide-1-big.png',
-            imageSmall: '/portfolio/slide-1-small.png',
-        },
-        {
-            id: 1,
-            imageBig: '/portfolio/slide-2-big.png',
-            imageSmall: '/portfolio/slide-2-small.png',
-        },
-        {
-            id: 2,
-            imageBig: '/portfolio/slide-3-big.png',
-            imageSmall: '/portfolio/slide-3-small.png',
-        },
-        {
-            id: 3,
-            imageBig: '/portfolio/slide-4-big.png',
-            imageSmall: '/portfolio/slide-4-small.png',
-        },
-        {
-            id: 4,
-            imageBig: '/portfolio/slide-5-big.png',
-            imageSmall: '/portfolio/slide-5-small.png',
-        },
-        {
-            id: 5,
-            imageBig: '/portfolio/slide-6-big.png',
-            imageSmall: '/portfolio/slide-6-small.png',
-        },
-        {
-            id: 6,
-            imageBig: '/portfolio/slide-7-big.png',
-            imageSmall: '/portfolio/slide-7-small.png',
-        },
-        {
-            id: 7,
-            imageBig: '/portfolio/slide-8-big.png',
-            imageSmall: '/portfolio/slide-8-small.png',
-        },
-    ];
 
     // const [activeSlide, setActiveSlide] = useState(slides[0]);
 
-    const breakpoints = {
-        640: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        },
-        1377: {
-            slidesPerView: 4
-        },
-        1600: {
-            slidesPerView: 5.5
-        },
-    };
 
     const swiperRef = useRef(null);
 
@@ -108,7 +164,7 @@ const MySwiper = () => {
     }, [windowWidthState])
 
     const   handleChange = (swiper) => {
-        console.log(swiper.realIndex);
+        console.log('i', swiper.realIndex);
         setActiveIndex(swiper.realIndex);
         setScrollValue((700 / slideCount) * swiper.realIndex);
         if (windowWidthState >= 1100) {
@@ -181,14 +237,39 @@ const MySwiper = () => {
                 {slides.map((slide) => (
                     <SwiperSlide key={slide} className={`${
                         activeIndex === slide.id ? "active-slide " : "topslide "
-                    } `}>
-                        <Image
-                            src={activeIndex === slide.id ? slide.imageBig : slide.imageSmall}
-                            alt="slide"
-                            width={activeIndex === slide.id ? 770 : 260}
-                            height={480}
-                            className="slide"
-                        />
+                    } relative`}>
+                        <img className="slide" src={slide.imageBig} alt="slide" width={activeIndex === slide.id ? 770 : 260} height={480} />
+                        <div className={`${slide.id === 4 || slide.id === 5 || slide.id === 6 || slide.id === 8 ? 'technologies-white-text' : ''} block-technologies font-montserrat absolute top-[50px] left-[40px]`}>
+                            <div className="block-technologies-title">Technologies</div>
+                            <div className="block-technologies-desc">{slide.technologies}</div>
+                        </div>
+                        <div className="info-block absolute bottom-0 flex items-center">
+                            <div className="info-wrap-text">
+                                <div className="info-title font-montserrat flex">
+                                    <Image
+                                        src={slide.infoFlag}
+                                        alt="slide"
+                                        width={28}
+                                        height={20}
+                                        className="flag"
+                                    />
+                                    <h3 className={activeIndex === slide.id ? 'text-[24px]' : 'text-[14px]'}>{slide.infoTitle}</h3>
+                                </div>
+                                <div className="info-description">
+                                    {activeIndex === slide.id ? slide.infoDescription : `${slide.infoDescription.slice(0, 46)}...`}
+                                </div>
+                            </div>
+                            {activeIndex === slide.id && <Link href={slide.link} type="submit"
+                                                               className="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none link-portfolio">
+                                <Image
+                                    src="/portfolio/btn.svg"
+                                    alt="rectangle"
+                                    width={150}
+                                    height={60}
+                                    className="link-portfolio-icon"
+                                />
+                            </Link>}
+                        </div>
                     </SwiperSlide>
                 ))}
             </Swiper>

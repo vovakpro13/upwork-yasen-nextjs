@@ -13,9 +13,9 @@ function FaqSection() {
           className="dots hidden xl:block absolute top-[-62px] right-[6%] z-10"
       />
       <div className="title-container ">
-        <div className="first-container flex w-full">
+        <div className="first-container flex w-full flex-wrap">
           <div className="big-text w-1/3 flex justify-start">
-            <p>
+            <p className="md:block flex">
               <span className="font-montserrat text-[18px]  xl:text-[46px] font-light underline mr-[10px]">
                 full
               </span>{" "}
@@ -26,11 +26,11 @@ function FaqSection() {
             </p>
             <hr className="w-[30px] sm:w-[81px] h-2 border-black border-t-[8px] sm:border-t-[18px] hidden xl:block translate-y-10 xl:ml-5 relative top-[-14px]" />
           </div>
-          <div className="text-line-container xl:w-2/3 flex justify-start items-center">
-            <p className="max-w-[259px] text-[16px]">
+          <div className="text-line-container xl:w-2/3 flex justify-start items-center w-full">
+            <p className="max-w-[80%] md:m-[unset] m-auto md:text-left text-center md:max-w-[259px] text-[16px]">
               Landing pages & online shops optimized for highe.
             </p>
-            <div className="line-container line-container-faq relative w-[40%] xl:w-[60%]">
+            <div className="line-container line-container-faq md:relative absolute w-[40%] xl:w-[60%]">
               <Image
                 src="/Rectangle 15.svg"
                 alt="rectangle"

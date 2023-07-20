@@ -133,11 +133,22 @@
         left: -15px;
         position: relative;
     }
+    .line-container-faq{
+        right: 18px;
+        top: 13px;
+    }
+    .text-line-container{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 430px){
     .right-container-ream{
         gap: 6vw;
+    }
+    .guarantee-desc{
+        max-width: 280px;
     }
 }
 @media screen and (min-width: 1377px){

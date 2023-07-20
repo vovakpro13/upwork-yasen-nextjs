@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${donpoligrafbum.variable}`} >
+    <html lang="en" className={`${montserrat.variable} ${donpoligrafbum.variable} scroll-smooth`} >
       <body>
         {children}
       </body>

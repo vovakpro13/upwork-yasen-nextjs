@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { useState } from "react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
+import "./style.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -25,13 +26,15 @@ const PackagesSwipper = () => {
         <Swiper
           // freeMode={true}
           mousewheel={true}
-          spaceBetween={50}
-          slidesPerView={1}
+          spaceBetween={9}
+          slidesPerView={1.25}
+          slidesOffsetBefore={30}
+          slidesOffsetAfter={30}
           onActiveIndexChange={handleChange}
           className="!w-[100!] !relative !z-30 "
           modules={[Navigation, Pagination, Scrollbar]}
         >
-          <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
+          <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !bg-white ">
             <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
               <Image
                 src="/icon-1f.svg"
@@ -247,7 +250,7 @@ const PackagesSwipper = () => {
               </table>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
+          <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !bg-white ">
             <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
               <Image
                 src="/icon-2f.svg"
@@ -394,7 +397,7 @@ const PackagesSwipper = () => {
               </table>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
+          <SwiperSlide className="font-montserrat !w-[full] xl:!w-[540px] !bg-white ">
             <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
               <Image
                 src="/icon-3f.svg"
@@ -547,17 +550,6 @@ const PackagesSwipper = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="w-full absolute left-0 top-64 overflow-hidden z-10">
-        <div className="waves h-[950px] w-[3200px] relative z-10">
-          <Image
-            src="/wawes.webp"
-            alt="wave"
-            width={5690}
-            height={550}
-            className="absolute w-[5690px] max-h-[950px]"
-          />
-        </div>
-      </div>{" "}
       <p className="absolute z-0 top-[550px] -right-[510px] font-bold text-[#F8F8F8] xl:text-[266px] -rotate-90">
         FEATURES
       </p>

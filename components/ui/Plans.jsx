@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Plans = () => {
   return (
-    <div className="flex w-full justify-between gap-5">
-      <div className="font-montserrat w-full max-w-[540px] h-[985px] sm:h-[1075px] xl:h-[1168px] bg-white ">
+    <div className="flex w-full justify-center gap-5 relative">
+      <div className="font-montserrat w-full max-w-[540px] h-[985px] sm:h-[1075px] xl:h-[1168px] relative z-[1]">
         <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image
             src="/icon-1f.svg"
@@ -214,7 +214,7 @@ const Plans = () => {
           </table>
         </div>
       </div>
-      <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
+      <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] relative z-[1]">
         <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image
             src="/icon-2f.svg"
@@ -355,7 +355,7 @@ const Plans = () => {
           </table>
         </div>
       </div>
-      <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
+      <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] relative z-[1]">
         <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image
             src="/icon-3f.svg"
@@ -500,6 +500,17 @@ const Plans = () => {
           </table>
         </div>
       </div>
+      <div className="w-full absolute left-0 top-9 overflow-hidden z-0">
+        <div className="waves h-[550px] w-[3200px] relative z-0">
+          <Image
+              src="/wawes.webp"
+              alt="wave"
+              width={5690}
+              height={550}
+              className="absolute w-[5690px] max-h-[550px] z-0"
+          />
+        </div>
+      </div>{" "}
     </div>
   );
 }

@@ -186,6 +186,20 @@
   animation: rotate-three 1s linear infinite;
   border-top: 3px solid rgb(81, 193, 79);
 }
+.bg-text-features{
+  display: none;
+}
+/*.plan-container-wrapper{*/
+/*  padding-left: 30px;*/
+/*  padding-right: 30px;*/
+/*}*/
+
+.bg-text-team{
+  color: rgba(13, 13, 13, 0.29);
+  font-weight: bold;
+  letter-spacing: 20px;
+  text-align: center;
+}
 
 @keyframes rotate-one {
   0% {
@@ -211,6 +225,11 @@
   }
   100% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+@media screen and (min-width: 1280px){
+  .bg-text-features{
+    display: block;
   }
 }
 @media screen and (max-width: 1023px){

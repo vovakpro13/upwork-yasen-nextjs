@@ -313,7 +313,7 @@ input.item-checkbox:checked + label.label-checkbox > span::before {
         font-size: 26px;
     }
     .form-section {
-        padding: 37px;
+        padding: 37px 16px;
     }
     .form-dots-pic {
         max-width: 30px;

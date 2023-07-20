@@ -10,16 +10,20 @@ const BottomSwiper = () => {
     const [activeIndex, setActiveIndex] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
     const breakpoints = {
         320: {
-            slidesPerView: 1.2
+            slidesPerView: 1.2,
+            slidesOffsetBefore: 30,
+            initialSlide: 0,
+            spaceBetween: 11
         },
         640: {
-            slidesPerView: 1.5
+            slidesPerView: 1.5,
         },
         768: {
             slidesPerView: 2.5
         },
         1024: {
-            slidesPerView: 2.5
+            slidesPerView: 2.5,
+            slidesOffsetBefore: 100,
         },
         1377: {
             slidesPerView: 4.5

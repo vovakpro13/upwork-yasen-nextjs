@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function TeamSection() {
   return (
-    <section className="team-section-container relative flex flex-col xl:flex-row-reverse xl:justify-between items-end w-full h-[590px] sm:h-[804px] xl:h-[643px] px-9 lg:px-32 mt-[80px] sm:mt-[100px] xl:mt-[160px] pt-12 xl:pb-[120px] xl:pt-[151px] ">
+    <section className="team-section-container relative flex flex-col xl:flex-row-reverse xl:justify-between items-end w-full h-[590px] sm:h-[804px] xl:h-[643px] px-9 lg:px-32 mt-[80px] sm:mt-[100px] xl:mt-[160px] pt-12 xl:pb-[120px] xl:pt-[151px] " id="team">
       <Image
         src="/tlight.svg"
         alt="green top"
@@ -174,6 +174,7 @@ function TeamSection() {
           />
         </div>
       </div>{" "}
+      <div className="w-full absolute left-0 top-9 overflow-hidden z-0 text-[410px] bg-text-team">TEAM</div>
     </section>
   );
 }

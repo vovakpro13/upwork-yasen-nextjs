@@ -1,0 +1,24 @@
+.second-row{
+
+}
+.back-words{
+
+}
+@media screen and (max-width: 540px){
+    .icon-f {
+        max-width: 67px;
+    }
+    .back-words{
+        font-size: 45px;
+    }
+    .second-row{
+        font-size: 10px;
+    }
+    .second-row td:last-of-type{
+       padding-left: 0;
+    }
+    .second-row td:first-of-type img{
+        top: 6px;
+        position: relative;
+    }
+}

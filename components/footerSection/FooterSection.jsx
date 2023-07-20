@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function FooterSection() {
   return (
-    <section className="footer-section relative px-9 lg:px-32 pt-[50px] pb-[34px]">
+    <section className="footer-section relative px-[16px] lg:px-32 pt-[50px] pb-[34px]">
       <Image
           src="/footer/Vector 19.svg"
           alt="rectangle"

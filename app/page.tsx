@@ -13,7 +13,7 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function Home() {
   return (
-      <>
+      <div className="scroll-smooth">
           <Navbar />
           <main className="w-full overflow-x-hidden">
               <HeadSection />
@@ -28,6 +28,6 @@ export default function Home() {
               <FooterSection />
               <Footer />
           </main>
-      </>
+      </div>
   );
 }

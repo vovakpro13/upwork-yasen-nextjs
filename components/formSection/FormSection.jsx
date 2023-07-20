@@ -76,7 +76,7 @@ function FormSection() {
     }, [])
 
     return (
-        <section className="form-section px-9 lg:px-32 lg:pt-[143px] lg:pb-[160px]">
+        <section className="form-section px-[16px] lg:px-32 lg:pt-[143px] lg:pb-[160px]">
             <div className="form-container">
                 <div className="left-section relative xl:pb-[145px]">
                     <h2 className="form-title text-gold font-donpoligrafbum"><span
@@ -166,7 +166,7 @@ function FormSection() {
                                     className="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none btn-send">
                                 SEND
                                 <Image
-                                    src="/portfolio/icon-send-btn.svg"
+                                    src="/footer/icon-send.svg"
                                     alt="rectangle"
                                     width={24}
                                     height={24}

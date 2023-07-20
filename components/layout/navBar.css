@@ -77,12 +77,31 @@
 
 }
 
-.wrapper-nav-global{
-    transition: .3s ease-in-out;
-    top: 0;
+.wrapper-nav-global .navbar{
+    transition: .3s ease-out;
+    transform: translateY(0);
+    opacity: 1;
 }
-.hidden-nav{
-    top: -100%;
+.hidden-nav .navbar{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+.hidden-nav .btn-menu{
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.btn-menu{
+    transform: translateY(0);
+    transition: .3s;
+}
+.show-menu-wrap .btn-menu{
+    opacity: 1;
+    transform: translateY(0);
+}
+.navbar{
+    background: rgb(18,18,18);
+    background: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(18,8,8,0) 95%);
+    /*backdrop-filter: blur(20px)*/
 }
 @media screen and (min-width: 1921px){
     .title-h1{

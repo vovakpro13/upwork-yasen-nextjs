@@ -25,7 +25,7 @@ const HeadSection = () => {
             className="relative arrow -top-[77px] left-[23px] animate-bounce-arrow h-12"
         />
       </div>
-      <div className="top-container-wrapper w-full h-screen-top-section relative flex flex-col-reverse xl:flex-row justify-end font-poppins text-white px-9 lg:px-32">
+      <div className="top-container-wrapper w-full h-screen-top-section relative flex flex-col-reverse xl:flex-row justify-end font-poppins text-white px-[16px] lg:px-32">
 
         <div className="left-container relative xl:w-6/12 flex flex-col justify-between left-container-custom">
           <div className="text-container text-container-custom relative flex flex-col justify-between xl:mt-0 z-50 pt-2.5">

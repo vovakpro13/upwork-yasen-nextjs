@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="footer relative px-9 lg:px-32 py-[10px]">
+    <footer className="footer relative px-[16px] lg:px-32 py-[10px]">
       <div className="footer-container">
         <div className="footer-navbar flex justify-center">
             <ul className="flex">

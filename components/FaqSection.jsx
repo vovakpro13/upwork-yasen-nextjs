@@ -1,14 +1,22 @@
 import Image from "next/image";
 import DropDown from "./ui/DropDown";
+import React from "react";
 
 function FaqSection() {
   return (
-    <section className="px-9 lg:px-32 faq-section">
+    <section className="px-[16px] lg:px-32 faq-section relative" id="faq">
+      <Image
+          src="/Vector.svg"
+          alt="vector"
+          width={94}
+          height={81}
+          className="dots hidden xl:block absolute top-[-62px] right-[6%] z-10"
+      />
       <div className="title-container ">
         <div className="first-container flex w-full">
           <div className="big-text w-1/3 flex justify-start">
             <p>
-              <span className="font-montserrat text-[18px]  xl:text-[46px] font-light underline ">
+              <span className="font-montserrat text-[18px]  xl:text-[46px] font-light underline mr-[10px]">
                 full
               </span>{" "}
               {""}
@@ -16,10 +24,10 @@ function FaqSection() {
                 F.A.Q.{" "}
               </span>
             </p>
-            <hr className="w-[30px] sm:w-[81px] h-2 border-black border-t-[8px] sm:border-t-[18px] hidden xl:block translate-y-10 xl:ml-5 " />
+            <hr className="w-[30px] sm:w-[81px] h-2 border-black border-t-[8px] sm:border-t-[18px] hidden xl:block translate-y-10 xl:ml-5 relative top-[-14px]" />
           </div>
           <div className="text-line-container xl:w-2/3 flex justify-start items-center">
-            <p className="max-w-[259px] ">
+            <p className="max-w-[259px] text-[16px]">
               Landing pages & online shops optimized for highe.
             </p>
             <div className="line-container line-container-faq relative w-[40%] xl:w-[60%]">

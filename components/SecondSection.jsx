@@ -5,8 +5,8 @@ import MySwiper from "./topSwipper/Swiper";
 
 const SecondSection = () => {
   return (
-    <div className="font-montserrat w-full portfolio-title-wrap">
-      <section className="px-9 lg:px-32 pt-16 xl:pt-40 xl:flex xl:justify-between">
+    <div className="font-montserrat w-full portfolio-title-wrap" id="portfolio">
+      <section className="px-[16px] lg:px-32 pt-16 xl:pt-40 xl:flex xl:justify-between">
         <div className="left-container w-full xl:w-4/12">
           <p className="flex gap-3 lg:gap-4">
             {" "}
@@ -55,6 +55,17 @@ const SecondSection = () => {
       <div className="relative z-10">
         {/* <AnimatedWaves /> */}
         <MySwiper />
+        <div className="w-full absolute left-0 top-9 overflow-hidden z-0">
+          <div className="waves h-[550px] w-[3200px] relative z-0">
+            <Image
+                src="/wawes.webp"
+                alt="wave"
+                width={5690}
+                height={550}
+                className="absolute w-[5690px] max-h-[550px] z-0"
+            />
+          </div>
+        </div>{" "}
       </div>
     </div>
   );

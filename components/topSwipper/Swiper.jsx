@@ -106,8 +106,14 @@ const slides = [
     },
 ];
 const breakpoints = {
+    320: {
+        slidesPerView: 1.15,
+        slidesOffsetBefore: 10,
+        initialSlide: 0
+    },
     540: {
-        slidesPerView: 1.15
+        slidesPerView: 1.15,
+        slidesOffsetBefore: 5
     },
     768: {
         slidesPerView: 2.5
@@ -119,13 +125,16 @@ const breakpoints = {
         slidesPerView: 4.5
     },
     1600: {
-        slidesPerView: 5.5
+        slidesPerView: 6.5,
+        initialSlide: 3
     },
     1900: {
-        slidesPerView: 6.5
+        slidesPerView: 7.5,
+        initialSlide: 4
     },
     2200: {
-        slidesPerView: 7.5
+        slidesPerView: 7.5,
+        initialSlide: 4
     },
 };
 const MySwiper = () => {
@@ -213,7 +222,7 @@ const MySwiper = () => {
                 modules={[Navigation, Pagination, Scrollbar]}
                 mousewheel={true}
                 spaceBetween={10}
-                initialSlide={1}
+                initialSlide={2}
                 centeredSlides={true}
                 navigation={{
                     prevEl: '.custom-prev',
@@ -244,7 +253,7 @@ const MySwiper = () => {
                                         height={20}
                                         className="flag"
                                     />
-                                    <h3 className={activeIndex === slide.id ? 'text-[24px]' : 'text-[14px]'}>{slide.infoTitle}</h3>
+                                    <h3 className={activeIndex === slide.id ? 'text-[14px] lg:text-[24px]' : 'text-[14px]'}>{slide.infoTitle}</h3>
                                 </div>
                                 <div className="info-description">
                                     {activeIndex === slide.id ? slide.infoDescription : `${slide.infoDescription.slice(0, 46)}...`}

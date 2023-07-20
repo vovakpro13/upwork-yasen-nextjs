@@ -18,6 +18,7 @@ const Wolf = () => {
   const [isLoading, setIsLoading] = useState(true);
   const gltf = useRef();
 
+
   useEffect(() => {
     const loader = new GLTFLoader();
     loader.load('/wolf/textured wolf v2.gltf', (gltfResult) => {

@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from "react";
 import { Suspense } from "react";
-import { useLoader, Canvas, useThree } from "@react-three/fiber";
+import {useLoader, Canvas, useThree, useFrame} from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Environment, OrbitControls } from "@react-three/drei";
-import { Goldman } from "next/font/google";
 import Preloader from "@/components/ui/Preloader";
+import gsap from "gsap";
 if (typeof window !== 'undefined') {
   window.mobileAndTabletCheck = function () {
     let check = false;
@@ -16,18 +16,27 @@ if (typeof window !== 'undefined') {
 }
 const Wolf = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
   const gltf = useRef();
-
 
   useEffect(() => {
     const loader = new GLTFLoader();
-    loader.load('/wolf/textured wolf v2.gltf', (gltfResult) => {
+    loader.load('/wolf/wolf.gltf', (gltfResult) => {
       gltf.current = gltfResult;
       setIsLoading(false);
     });
   }, []);
-  const Model = () => {
-    const gltf = useLoader(GLTFLoader, "/wolf/textured wolf v2.gltf");
+
+  const handlePointerOver = () => {
+    setIsHovered(true);
+  };
+
+  const handlePointerOut = () => {
+    setIsHovered(false);
+  };
+
+  const Model = ({ isHovered, onPointerOver, onPointerOut }) => {
+    const gltf = useLoader(GLTFLoader, "/wolf/wolf.gltf");
 
     const { size } = useThree();
     gltf.scene.children[0].position.set(0,-0.002,0);
@@ -39,6 +48,18 @@ const Wolf = () => {
         gltf.scene.scale.set(380,380,380);
       }
     }
+    useFrame((state) => {
+      if (isHovered) {
+        const mouseX = state.mouse.x * 2; // Нормализуем положение мыши от -1 до 1
+        const movementRange = .1; // Расстояние, на которое двигается волк влево и вправо
+        gltf.scene.position.x = mouseX * movementRange;
+      }
+      gsap.to(gltf.scene.position.y, {
+        x: gltf.scene.position.x,
+        duration: 0.5, // Adjust the duration for the speed of the animation
+        ease: "power2.out",
+      });
+    });
 
     const modelScale = 180;
     const modelPosition = [0, 0, 0]; // [x, y, z]
@@ -49,6 +70,8 @@ const Wolf = () => {
           <primitive
               dispose={null}
               object={gltf.scene}
+              onPointerOver={onPointerOver}
+              onPointerOut={onPointerOut}
           />
         </>
     );
@@ -71,14 +94,21 @@ const Wolf = () => {
         />
 
         <Suspense>
-          <Model />
+          <Model
+              isHovered={isHovered}
+              onPointerOver={handlePointerOver}
+              onPointerOut={handlePointerOut}
+          />
           <Environment preset="city" />
         </Suspense>
         <OrbitControls
             enableDamping={false}
-            enablePan={false} enableZoom={false}
-            maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2}
-            maxAzimuthAngle={Math.PI/3} minAzimuthAngle={-Math.PI/3}
+            enablePan={false}
+            enableZoom={false}
+            maxPolarAngle={Math.PI/2}
+            minPolarAngle={Math.PI/2}
+            maxAzimuthAngle={Math.PI/3}
+            minAzimuthAngle={-Math.PI/3}
             rotateSpeed={0.2}
         />
       </Canvas>}

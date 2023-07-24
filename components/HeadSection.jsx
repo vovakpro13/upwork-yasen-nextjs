@@ -6,6 +6,7 @@ import Link from "next/link";
 import Wolf from "./ui/Wolf";
 import AnimatedWaves from "./ui/AnimatedWaves";
 import './components.css'
+import AnimatedModel from "@/components/ui/animateWolf/AnimateModel";
 const HeadSection = () => {
   return (
     <section className="section-wrapper bg-[#121212] relative">
@@ -92,7 +93,7 @@ const HeadSection = () => {
 
         <div className="right-container right-container-custom relative xl:-top-24 z-10 h-2/6 xl:h-5/6 flex items-center w-full xl:translate-y-8 xl:w-6/12">
           <div className="wolf-container w-full h-full -translate-y-5 lg:-top-10 flex items-center xl:items-start justify-center overflow-hidden">
-            <Wolf/>
+            <Wolf />
             {/* <iframe
               title="Clay Wolf"
               allowFullScreen

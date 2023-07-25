@@ -28,7 +28,7 @@ function DropDown({number, description}) {
           {isOpen ? "LESS" : "MORE"}{" "}
         </p>
       </div>
-      <div className={`${isOpen ? "block" : "hidden" } font-montserrat text-[10px] sm:text-base xl:text-lg pl-[44px] lg:pl-[80px] mt-[10px]`}>
+      <div className={`${isOpen ? "block" : "hidden" } font-montserrat text-[10px] sm:text-base xl:text-lg pl-[44px] lg:pl-[80px] mt-[20px] xl:mt-[45px]`}>
         <p>
           But I must explain to you how all this mistaken idea of denouncing
           pleasure and praising pain was born and I will give you a complete

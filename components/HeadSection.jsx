@@ -91,19 +91,21 @@ const HeadSection = () => {
           </div>
         </div>
 
-        <div className="right-container right-container-custom relative xl:-top-24 z-10 h-2/6 xl:h-5/6 flex items-center w-full xl:translate-y-8 xl:w-6/12">
+        <div className="right-container right-container-custom relative xl:-top-24 z-10 h-2/6 xl:h-5/6 flex items-center w-full xl:translate-y-8 xl:w-6/12 cursor-pointer">
           <div className="wolf-container w-full h-full -translate-y-5 lg:-top-10 flex items-center xl:items-start justify-center overflow-hidden">
             <Wolf />
-            {/* <iframe
-              title="Clay Wolf"
-              allowFullScreen
-              src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20230612%2F2947770043234443%2F2947770043234443.glb&autorotate=true&json-data=1686549707993&decrypt=1&tv=147"
-              width={920}
-              height={850}
-              className=" relative  h-[135%] sm:h-[140%] xl:h-[150%] xl:max-h-[950px] top-5 xl:top-40 2xl:top-52 xl:-right-24 z-50"
-            >
-              {" "}
-            </iframe>{" "} */}
+            {/*  <iframe src="https://app.vectary.com/p/7InU1v0fdlCGI3YWzyshFa/" frameBorder="0" width="100%"*/}
+            {/*          height="480"></iframe>*/}
+            {/*<iframe*/}
+            {/*  title="Clay Wolf"*/}
+            {/*  allowFullScreen*/}
+            {/*  src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20230612%2F2947770043234443%2F2947770043234443.glb&autorotate=true&json-data=1686549707993&decrypt=1&tv=147"*/}
+            {/*  width={920}*/}
+            {/*  height={850}*/}
+            {/*  className=" relative  h-[135%] sm:h-[140%] xl:h-[150%] xl:max-h-[950px] top-5 xl:top-40 2xl:top-52 xl:-right-24 z-50"*/}
+            {/*>*/}
+            {/*  {" "}*/}
+            {/*</iframe>{" "}*/}
           </div>
         </div>
 
@@ -114,28 +116,28 @@ const HeadSection = () => {
         alt="vector"
         width={1667}
         height={566}
-        className="green-light absolute  -bottom-11 lg:-bottom-40 xl:-bottom-[430px] -left-1 z-0"
+        className="green-light absolute  -bottom-11 lg:-bottom-40 xl:-bottom-[430px] -left-1 z-0 select-none"
       />
       <Image
         src="/Vector 19.png"
         alt="greenlight"
         width={1098}
         height={593}
-        className="green-light absolute top-0 right-0 z-0"
+        className="green-light absolute top-0 right-0 z-0 select-none"
       />
       <Image
         src="/vline.svg"
         alt="vline"
         width={10}
         height={950}
-        className="vline absolute -bottom-[1150px] xl:-bottom-[1020px] right-[57%] -translate-x-11 sm:-translate-x-8 xl:-translate-x-32 z-0"
+        className="vline absolute -bottom-[1150px] xl:-bottom-[1020px] right-[57%] -translate-x-11 sm:-translate-x-8 xl:-translate-x-32 z-0 select-none"
       />
       <Image
           src="/Vector.svg"
           alt="vector"
           width={94}
           height={81}
-          className="dots hidden xl:block absolute bottom-0 left-[21%] z-10"
+          className="dots hidden xl:block absolute bottom-0 left-[21%] z-10 select-none"
       />
     </section>
   );

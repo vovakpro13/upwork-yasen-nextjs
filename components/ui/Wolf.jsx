@@ -5,6 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Environment, OrbitControls } from "@react-three/drei";
 import Preloader from "@/components/ui/Preloader";
 import gsap from "gsap";
+import {Euler, Quaternion} from "three";
 if (typeof window !== 'undefined') {
   window.mobileAndTabletCheck = function () {
     let check = false;
@@ -50,15 +51,23 @@ const Wolf = () => {
     }
     useFrame((state) => {
       if (isHovered) {
-        const mouseX = state.mouse.x * 2; // Нормализуем положение мыши от -1 до 1
-        const movementRange = .1; // Расстояние, на которое двигается волк влево и вправо
-        gltf.scene.position.x = mouseX * movementRange;
+        const mouseX = state.mouse.x;
+        const mouseY = state.mouse.y;
+
+        // Calculate the rotation angles based on the mouse position
+        const maxRotation = 0.05;
+        const rotationX = mouseY * maxRotation;
+        const rotationY = mouseX * maxRotation;
+
+        // Create a Quaternion to store the rotation
+        const targetRotation = new Quaternion().setFromEuler(
+            new Euler(rotationX, rotationY, 0, "XYZ")
+        );
+
+        // Smoothly interpolate between the current rotation and the target rotation
+        const maxInterpolationFactor = 0.1;
+        gltf.scene.quaternion.slerp(targetRotation, maxInterpolationFactor);
       }
-      gsap.to(gltf.scene.position.y, {
-        x: gltf.scene.position.x,
-        duration: 0.5, // Adjust the duration for the speed of the animation
-        ease: "power2.out",
-      });
     });
 
     const modelScale = 180;

@@ -11,7 +11,7 @@ const AnimatedWaves = () => {
             alt="wave"
             width={5690}
             height={100}
-            className="absolute w-[5690px] max-h-[550px] "
+            className="absolute w-[5690px] max-h-[550px] select-none"
           />
         </div>
       </div>

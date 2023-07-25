@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Plans = () => {
   return (
-    <div className="flex w-full justify-center gap-5 relative">
+    <div className="flex w-full justify-center gap-5 relative px-[128px]">
       <div className="font-montserrat w-full max-w-[540px] h-[985px] sm:h-[1075px] xl:h-[1168px] relative z-[1]">
         <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image

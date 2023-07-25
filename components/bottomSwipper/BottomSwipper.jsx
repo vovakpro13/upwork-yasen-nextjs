@@ -26,10 +26,10 @@ const BottomSwiper = () => {
             slidesOffsetBefore: 100,
         },
         1377: {
-            slidesPerView: 4.5
+            slidesPerView: 3.5
         },
         1600: {
-            slidesPerView: 4.5
+            slidesPerView: 3.5
         },
         1920: {
             slidesPerView: 4.5

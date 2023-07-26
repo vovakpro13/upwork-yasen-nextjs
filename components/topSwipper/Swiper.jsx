@@ -121,20 +121,44 @@ const breakpoints = {
     1024: {
         slidesPerView: 3.5
     },
-    1377: {
-        slidesPerView: 4.5
+    1360: {
+        slidesPerView: 3.5,
+        slidesOffsetBefore: 100,
+        slidesOffsetAfter: 130
+    },
+    1400: {
+        slidesPerView: 4.5,
+        slidesOffsetBefore: 100,
+        slidesOffsetAfter: 170
+    },
+    1515: {
+        slidesPerView: 4.5,
+        slidesOffsetBefore: 140,
+        slidesOffsetAfter: 100
     },
     1600: {
         slidesPerView: 6.5,
-        initialSlide: 3
+        initialSlide: 3,
+        slidesOffsetBefore: 140,
+        slidesOffsetAfter: 100
     },
     1900: {
-        slidesPerView: 7.5,
-        initialSlide: 4
+        slidesPerView: 6.5,
+        initialSlide: 4,
+        slidesOffsetBefore: 300,
+        slidesOffsetAfter: 100
     },
     2200: {
-        slidesPerView: 7.5,
-        initialSlide: 4
+        slidesPerView: 6.5,
+        initialSlide: 4,
+        slidesOffsetBefore: 400,
+        slidesOffsetAfter: 100
+    },
+    2350: {
+        slidesPerView: 6.5,
+        initialSlide: 4,
+        slidesOffsetBefore: 600,
+        slidesOffsetAfter: 100
     },
 };
 const MySwiper = () => {

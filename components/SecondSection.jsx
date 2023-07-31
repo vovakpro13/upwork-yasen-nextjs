@@ -13,12 +13,12 @@ const SecondSection = () => {
             <span
               className="underline font-light portfolio-title-our relative"
             >
-              our
+             нашето
             </span>{" "}
             <span
               className="text-gold font-donpoligrafbum portfolio-title-text"
             >
-              Port
+              ПОРТ
             </span>
             <span className="font-bold relative portfolio-title-tire">
               {" "}
@@ -28,7 +28,7 @@ const SecondSection = () => {
           <p
             className="text-gold gold-underline font-donpoligrafbum w-40 translate-x-40 lg:translate-x-44 -translate-y-5 lg:-translate-y-10 portfolio-title-text folio"
           >
-            Folio
+            ФОЛИО
           </p>
         </div>
         <div className="right-container w-full xl:w-7/12 flex">
@@ -45,10 +45,15 @@ const SecondSection = () => {
           <p
             className=" underline font-semibold portfolio-title-desc w-full xl:max-w-4xl "
           >
-            Here our competetors put fake client reviews.{" "}
+            Тук нашите конкуренти слагат ‘скрийншоти’ на
+            фейк ревюта от ‘доволни клиенти’.{" "}
             <span className="green-underline text-[#44937D] ">
-              Instead of doing this, we encourage you to call ANY of our previous clients over the phone and ask them did we completed the project successfully.
-            </span> Their websites are all listed in the portfolio section.{" "}
+               Вместо това,
+            Ви приканваме да се свържете по телефона,
+            с който и да е от нашите клиенти и лично да ги
+            попитате дали сме надминали очакванията им.
+            </span> Телефоните им са публични, на всеки един от
+            съответните сайтове.{" "}
           </p>
         </div>
       </section>

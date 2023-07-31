@@ -6,7 +6,6 @@ import Link from "next/link";
 import Wolf from "./ui/Wolf";
 import AnimatedWaves from "./ui/AnimatedWaves";
 import './components.css'
-import AnimatedModel from "@/components/ui/animateWolf/AnimateModel";
 const HeadSection = () => {
   return (
     <section className="section-wrapper bg-[#121212] relative">
@@ -31,18 +30,18 @@ const HeadSection = () => {
         <div className="left-container relative xl:w-6/12 flex flex-col justify-between left-container-custom">
           <div className="text-container text-container-custom relative flex flex-col justify-between xl:mt-0 z-50 pt-2.5">
             <p className="text-primary font-semibold font-montserrat left-container-text-top">
-              Development
+                Ние създаваме от нулата
             </p>
             <div className="big-text-container font-donpoligrafbum h-fit flex flex-col justify-between text-gold  font-bold text-[15px] sm:text-xl lg:text-2xl xl:text-4xl mt-8">
               <h1 className="title-h1">
-                <span className="block">landing pages</span>
+                <span className="block">ЛЕНДИНГ СТРАНИЦИ</span>
                 <span className="translate-x-9 sm:translate-x-14 lg:translate-x-[140px] block">
-                online shops
+                ОНЛАЙН МАГАЗИНИ
                 </span>
-              <span className="lg:translate-x-[31px] block">websites</span></h1>
+              <span className="lg:translate-x-[31px] block">УЕБ САЙТОВЕ</span></h1>
             </div>
             <p className="font-montserrat mt-8 xl:leading-[50px] text-primary sm:text-[16px] lg:text-[36px] text-caption xl:font-light max-w-xs sm:max-w-md lg:max-w-[570px] xl:max-w-[620px] title-text">
-              We work with you until the site starts selling!
+                И ще работим с Вас,  до момента, в който сайта Ви започне да прави пари!
             </p>
           </div>
           <div className="buttons-container relative w-full h-[40px] sm:h-[55px] xl:w-72 flex lg:hidden justify-between items-center z-30 ">
@@ -94,18 +93,6 @@ const HeadSection = () => {
         <div className="right-container right-container-custom relative xl:-top-24 z-10 h-2/6 xl:h-5/6 flex items-center w-full xl:translate-y-8 xl:w-6/12 cursor-pointer">
           <div className="wolf-container w-full h-full -translate-y-5 lg:-top-10 flex items-center xl:items-start justify-center overflow-hidden">
             <Wolf />
-            {/*  <iframe src="https://app.vectary.com/p/7InU1v0fdlCGI3YWzyshFa/" frameBorder="0" width="100%"*/}
-            {/*          height="480"></iframe>*/}
-            {/*<iframe*/}
-            {/*  title="Clay Wolf"*/}
-            {/*  allowFullScreen*/}
-            {/*  src="https://v.creators3d.com/index.html?load=%2Fviews%2Fproduction%2Fitem%2F20230612%2F2947770043234443%2F2947770043234443.glb&autorotate=true&json-data=1686549707993&decrypt=1&tv=147"*/}
-            {/*  width={920}*/}
-            {/*  height={850}*/}
-            {/*  className=" relative  h-[135%] sm:h-[140%] xl:h-[150%] xl:max-h-[950px] top-5 xl:top-40 2xl:top-52 xl:-right-24 z-50"*/}
-            {/*>*/}
-            {/*  {" "}*/}
-            {/*</iframe>{" "}*/}
           </div>
         </div>
 

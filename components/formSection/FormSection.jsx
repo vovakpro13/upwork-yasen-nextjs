@@ -80,14 +80,14 @@ function FormSection() {
             <div className="form-container">
                 <div className="left-section relative xl:pb-[145px]">
                     <h2 className="form-title text-gold font-donpoligrafbum"><span
-                        className="font-montserrat form-title-do gold-underline">do</span> yuo want -</h2>
-                    <div className="form-caption font-montserrat text-[56px] xl:text-[56px] xl:max-w-[600px]">{" "}
-                        <span>to order a website or </span>{" "}
-                        <span className="relative xl:left-[31px] xl:-top-[10px]">application</span>{" "}
+                        className="font-montserrat form-title-do gold-underline">СВЬРЖЕТЕ СЕ </span> с нас -</h2>
+                    <div className="form-caption font-montserrat text-[56px] xl:text-[56px] xl:max-w-[600px] text-right">{" "}
+                        за безплатен видео одит на Вашият уебсайт или идея
                     </div>
                     <div
                         className="form-questions relative font-montserrat xl:text-[36px] text-gold xl:max-w-[300px] xl:mt-[33px] xl:ml-[143px] xl:leading-[43px]">
-                        or do you have <Link href="/" className="gold-underline">questions?</Link>
+                        Ще Ви отговорим
+                         <Link href="/" className="gold-underline">в рамките на деня.</Link>
                         <Image
                             src="/left-line-form.svg"
                             alt="rectangle"

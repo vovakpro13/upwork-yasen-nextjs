@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function GuaranteeSection() {
   return (
-    <div className="guarantee-section-wrapper w-full h-[223px] sm:h-[346px] xl:h-[548px] flex flex-col justify-start items-center bg-[#F3F8F3] px-[16px] lg:px-32 mb-[50px] mt-[50px] sm:mt[78px] xl:mt-[140px] pt-[27px] xl:pt-[65px] relative">
+    <div className="guarantee-section-wrapper w-full h-[253px] sm:h-[376px] xl:h-[575px] flex flex-col justify-start items-center bg-[#F3F8F3] px-[16px] lg:px-32 mb-[50px] mt-[50px] sm:mt[78px] xl:mt-[140px] pt-[27px] xl:pt-[65px] relative">
       <div className="relative z-10 w-full flex justify-center">
         <Image
           src="/blackdots.svg"
@@ -23,8 +23,8 @@ function GuaranteeSection() {
         GUARANTEE
       </p>
       <p className="guarantee-desc relative bottom-20 sm:bottom-40 xl:bottom-96 text-center max-w-[1380px] text-xs sm:text-[22px] xl:text-4xl leading-[22px] sm:leading-[26.82px] xl:leading-[54px] ">
-        <span>When you buy a <span className="text-primary"> Large / Medium</span> package, <span className="underline">we will work with you,</span> changing the look of your site <span className="underline">
-          until the moment it starts making money!
+        <span>При закупуване на пакет <span className="text-primary"> ПРЕМИУМ и УЛТРА</span> , ние се ангажираме с писмена гаранция, <span className="underline">ча ще работим с Вас,</span>  до момента, в който сайть Ви не възвърне инвестицията по изработката му, <span className="underline">
+          под формата на продажби.
         </span></span>
       </p>
         <div className="w-full absolute left-0 top-9 overflow-hidden z-0">

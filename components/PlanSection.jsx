@@ -13,34 +13,34 @@ function PlanSection() {
               height={81}
               className="absolute w-[30px] h-6 sm:w-[66px] sm:h-[58px] xl:w-[94px] xl:h-[81px] top-[89px] left-0 xl:left-32 2xl:left-32 xl:top-[110px] 2xl:top-[159px] text-container-decor"
           />
-          <div className="title-container w-[270px] sm:w-[520px] xl:w-[580px] 2xl:w-[680px] flex justify-between items-start">
+          <div className="title-container w-[270px] sm:w-[520px] xl:w-[580px] 2xl:w-[727px] flex justify-between items-start">
             <hr className="w-[30px] sm:w-[81px] h-2 border-gold border-t-[8px] sm:border-t-[18px] translate-y-3 xl:hidden " />
             <p className="title-global plan-title text-gold w-[160px] sm:w-[300px] xl:w-auto font-donpoligrafbum gold-underline text-xl sm:text-4xl xl:text-[56px] 2xl:text-[76px] sm:leading-[50px] xl:leading-[60px] 2xl:leading-[75px] font-bold text-end 2xl:ml-16 ">
-              CHOOSE PLAN
+              Пакети и Цени
             </p>
             <div className="xl:pl-7">
               <p className="font-montserrat text-gold text-lg sm:text-[46px] font-light sm:font-thin xl:gold-underline">
                 {" "}
-                your
+                вашият
               </p>
               <hr className="w-[30px] sm:w-[81px] h-2 border-gold border-t-[8px] sm:border-t-[18px] hidden xl:block translate-y-10 title-container-line" />
             </div>
           </div>
 
-          <div className="info-container-plan relative z-10 w-full xl:w-auto mt-10 xl:mt-0">
+          <div className="info-container-plan relative z-10 w-full xl:w-auto mt-10 xl:mt-0 max-w-[540px]">
             <h2 className="font-donpoligrafbum font-bold text-xl sm:text-4xl xl:text-5xl info-container-plan-title">
-              FEATURES
+              ПРЕМИУМ ПРОДУКТИ
             </h2>
             <p className="text-sm sm:text-[22px] font-montserrat sm:w-[520px] font-semibold leading-[2rem]">
             <span className="text-primary green-underline">
-              Landing pages & online
+              Всички изработени от нас сайтове,
             </span>{" "}
-              <span>shops optimized for higher</span>{" "}
+              <span>са оптимизирани за</span>{" "}
               <span className="text-primary green-underline">
-              conversion rate & more sales
+              повече продажби
             </span>{" "}
               <br />
-              <span>(more clients)</span>
+              <span>(повече клиенти).</span>
             </p>
           </div>
         </div>

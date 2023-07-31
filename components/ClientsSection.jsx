@@ -7,9 +7,9 @@ function ClientsSection() {
       <div className="text-container relative z-50 w-full h-24 flex flex-col sm:flex-row justify-between sm:justify-center sm:gap-5 sm:items-center xl:justify-between xl:px-32 mt-[62px] xl:mt-[92px] ">
         <p className="font-donpoligrafbum text-gold flex w-[265px] sm:w-[320px] xl:w-[847px] justify-between items-center ml-6 sm:ml-0 clients-section-title">
           <span className="font-montserrat  gold-underline font-extralight text-lg xl:text-[46px] clients-section-title-our">
-            our
+            нашите
           </span>
-            CLIENTS -
+            КЛИЕНТИ -
         </p>
         <Image
           src="/Group 25.svg"
@@ -19,8 +19,7 @@ function ClientsSection() {
           className="hidden xl:block clients-section-title-line"
         />
         <p className="text-[#EFF6F4] font-montserrat w-[230px] xl:w-[260px] text-sm xl:text-base text-center sm:text-end font-light xl:font-normal translate-x-14 sm:translate-x-0 clients-section-title-desc">
-          Landing pages & online shops optimized for higher conversion rate &
-          more sales (more clients)
+            Малка част от брандовете с които сме работили
         </p>
       </div>
       <div className="clients-animation-container w-[1157px] sm:w-[2200px] 2xl:w-[2700px] h-9 sm:h-[82px] absolute z-20 bottom-20 xl:bottom-48 -left-96 flex justify-between items-center ">

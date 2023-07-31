@@ -35,27 +35,24 @@ function TeamSection() {
           <div className="big-text text-gold flex justify-end xl:justify-evenly items-center">
             <p>
               <span className="font-montserrat text-[18px] xl:text-[46px] font-light underline ">
-                our
+                нашият
               </span>{" "}
               {""}
               <span className="font-donpoligrafbum text-[20px] sm:text-[36px] xl:text-[33px] 2xl:text-[56px] font-bold xl:ml-2 ">
-                TEAM{" "}
+                ЕКИП{" "}
               </span>
             </p>
             <hr className="w-[30px] sm:w-[40px] xl:w-[58px] h-1 border-gold border-t-[7px] sm:border-t-[10px] xl:border-t-[13px] ml-5 xl:ml-5 " />
           </div>
           <p className="text-secondary text-base sm:text-lg xl:text-[22px] 2xl:text-4xl w-full mt-3 xl:mt-10 text-end pr-6 xl:pr-12 ">
-            of developing products of
+            5-те ⭐ на Джей Макс
           </p>
           <p className="text-secondary text-base sm:text-lg xl:text-[22px] 2xl:text-4xl text-end">
-            varying complexity
+
           </p>
           <p className="font-montserrat text-[#EFF6F4] text-[10px] sm:text-sm xl:text-lg mt-3 xl:mt-16">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using Content here, content
-            here, making it look like readable English.
+            Ние сме 5 амбициозни предприемача, обединени
+            от страстта си ком създаването на изключителни уеб решения
           </p>
         </div>
       </div>
@@ -72,7 +69,8 @@ function TeamSection() {
             />
           </div>
           <div className="-rotate-90 origin-bottom-left translate-x-16 text-secondary xl:w-[209px] ">
-            Landing pages & online shops optimized for higher conversion rate
+            Всеки един от нас специализира в конкретна област, да можем да
+            гарантираме 200% удовлетвореност при изпьлнението на всеки проект.
           </div>
         </div>
         <div className="right-container right-container-ream flex flex-wrap justify-center items-end xl:w-[750px] gap-10 2xl:gap-20 ">

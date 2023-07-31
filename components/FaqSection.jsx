@@ -17,18 +17,18 @@ function FaqSection() {
           <div className="big-text w-1/3 flex justify-start">
             <p className="md:block flex">
               <span className="font-montserrat text-[18px]  xl:text-[46px] font-light underline mr-[10px]">
-                full
+                често задавани
               </span>{" "}
               {""}
               <span className="font-donpoligrafbum text-[20px] sm:text-[36px] xl:text-[56px] font-bold gold-underline text-gold ">
-                F.A.Q.{" "}
+                ВЪПРОСИ{" "}
               </span>
             </p>
             <hr className="w-[30px] sm:w-[81px] h-2 border-black border-t-[8px] sm:border-t-[18px] hidden xl:block translate-y-10 xl:ml-5 relative top-[-14px]" />
           </div>
           <div className="text-line-container xl:w-2/3 flex justify-start items-center w-full">
             <p className="max-w-[80%] md:m-[unset] m-auto md:text-left text-center md:max-w-[259px] text-[16px]">
-              Landing pages & online shops optimized for highe.
+              и техните отговори
             </p>
             <div className="line-container line-container-faq md:relative absolute w-[40%] xl:w-[60%]">
               <Image

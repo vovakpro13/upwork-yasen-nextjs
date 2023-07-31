@@ -63,10 +63,10 @@ const HeadSection = () => {
                     className="w-full"
                 />
               </span>
-                  <span className="header-btn__text font-montserrat">Get a consultation</span>
+                  <span className="header-btn__text font-montserrat"> КОНСУЛТАЦИЯ</span>
 
               </Link>
-              <Link href="#" className="relative z-0 px-[13px] header-btn top-[4px] -left-[4px] pr-0">
+              <Link href="#form-section" className="relative z-0 px-[13px] header-btn top-[4px] -left-[4px] pr-0">
                   <hr className="nav-button h-24 -top-5 w-0 absolute z-0 border-primary border-t-[3px] rounded-sm " />
                   <span className="header-btn__border absolute left-0 top-0">
                 <Image
@@ -84,7 +84,7 @@ const HeadSection = () => {
                     className="w-full"
                 />
               </span>
-                  <span className="header-btn__text font-montserrat">order a free audit</span>
+                  <span className="header-btn__text font-montserrat">БЕЗПЛАТЕН ОДИТ</span>
 
               </Link>
           </div>

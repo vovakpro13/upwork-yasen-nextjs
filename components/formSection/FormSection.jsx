@@ -76,7 +76,7 @@ function FormSection() {
     }, [])
 
     return (
-        <section className="form-section px-[16px] lg:px-32 lg:pt-[143px] lg:pb-[160px]">
+        <section id="form-section" className="form-section px-[16px] lg:px-32 lg:pt-[143px] lg:pb-[160px]">
             <div className="form-container">
                 <div className="left-section relative xl:pb-[145px]">
                     <h2 className="form-title text-gold font-donpoligrafbum"><span

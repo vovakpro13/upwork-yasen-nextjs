@@ -47,7 +47,7 @@ const BurgerNavbar = () => {
                         <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#team" onClick={toggleMenu}>ЕКИП</Link></li>
                     </ul>
                     <ul className="flex">
-                        <li className="footer-social"><Link href="">
+                        <li className="footer-social"><Link href="https://www.facebook.com/jmaxwebsites">
                             <Image
                                 src="/footer/facebook.svg"
                                 alt="rectangle"
@@ -56,7 +56,7 @@ const BurgerNavbar = () => {
                                 className="footer-social-icon"
                             />
                         </Link></li>
-                        <li className="ml-[44px] lg:ml-[24px] xl:ml-[24px] footer-social"><Link href="">
+                        <li className="ml-[44px] lg:ml-[24px] xl:ml-[24px] footer-social"><Link href="https://www.instagram.com/jmax_websites/">
                             <Image
                                 src="/footer/Instagram.svg"
                                 alt="rectangle"

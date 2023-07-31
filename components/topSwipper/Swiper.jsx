@@ -12,7 +12,6 @@ import "swiper/css/scrollbar";
 import "swiper/css/mousewheel";
 import "./swiper.css";
 import "swiper/css";
-import Preloader from "@/components/ui/Preloader";
 const slides = [
     {
         id: 0,
@@ -20,9 +19,9 @@ const slides = [
         imageSmall: '/portfolio/slide-1-small.png',
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'UAI. Underwater acoustics international',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Водещ Американски бранд за подводни изследвания',
         link: 'https://uaisolutions.com/',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'PHP, Javascript, Figma, Photoshop',
     },
     {
         id: 1,
@@ -30,9 +29,9 @@ const slides = [
         imageSmall: '/portfolio/slide-2-small.png',
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Бира Батя Прошек',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Българска крафт бира с история, презентационен сайт.',
         link: 'https://proshek-beer.com/',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'Photoshop, Wordpress',
     },
     {
         id: 2,
@@ -40,9 +39,9 @@ const slides = [
         imageSmall: '/portfolio/slide-3-small.png',
         infoFlag: '/portfolio/flag2.svg',
         infoTitle: 'Loren Networks',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Българска Internet of Things компания',
         link: 'https://lorennetworks.com/',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'Figma, Lottie, Wordpress',
     },
     {
         id: 3,
@@ -50,9 +49,9 @@ const slides = [
         imageSmall: '/portfolio/slide-4-small.png',
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Grand Royale',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Български СПА хотел в подножието на Пирин планина, презентационен сайт.',
         link: 'https://grandroyale.bg/',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'Wordpress, Photoshop',
     },
     {
         id: 4,
@@ -60,9 +59,9 @@ const slides = [
         imageSmall: '/portfolio/slide-5-small.png',
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'MyCopywriter.io',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Личната страница на Диян, български фрииланс копирайтър от екипа на Джей Макс',
         link: 'https://mycopywriter.io/',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'Figma, Lottie, Wordpress',
     },
     {
         id: 5,
@@ -70,9 +69,9 @@ const slides = [
         imageSmall: '/portfolio/slide-6-small.png',
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'GD Media Ltd.',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Портфолио от проекти на Георги, видеграф и монтажист от екипа на Джей Макс',
         link: 'https://www.gdmotion.com/',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'DaVinci Resolve, Photoshop, Illustrator',
     },
     {
         id: 6,
@@ -80,9 +79,9 @@ const slides = [
         imageSmall: '/portfolio/slide-7-small.png',
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Conso4s',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Софтуерна компания от Англия',
         link: 'https://conso4s.com/',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'Figma, Divi',
     },
     {
         id: 7,
@@ -90,9 +89,9 @@ const slides = [
         imageSmall: '/portfolio/slide-8-small.png',
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Beatclub',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Пилотен NFT проект на Timbaland',
         link: 'https://beatclub.com/',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'nextJS, Figma',
     },
     {
         id: 8,
@@ -100,9 +99,9 @@ const slides = [
         imageSmall: '/portfolio/slide-9-small.png',
         infoFlag: '/portfolio/flag1.svg',
         infoTitle: 'Camissafashion',
-        infoDescription: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+        infoDescription: 'Премиум български бранд , производител на висококачествени ризи, за европейския пазар.',
         link: 'https://camissafashion.com/ ',
-        technologies: 'HTML, CSS, NODE JS, React JS',
+        technologies: 'Figma, WooCommerce, DaVinci Resolve, Stripe',
     },
 ];
 const breakpoints = {
@@ -264,7 +263,7 @@ const MySwiper = () => {
                     } relative`}>
                         <img className="slide" src={slide.imageBig} alt="slide" width={activeIndex === slide.id ? 770 : 260} height={480} />
                         <div className={`${slide.id === 4 || slide.id === 5 || slide.id === 6 || slide.id === 8 ? 'technologies-white-text' : ''} block-technologies font-montserrat absolute top-[50px] left-[40px]`}>
-                            <div className="block-technologies-title">Technologies</div>
+                            <div className="block-technologies-title">Технологии:</div>
                             <div className="block-technologies-desc">{slide.technologies}</div>
                         </div>
                         <div className="info-block absolute bottom-0 flex items-center">

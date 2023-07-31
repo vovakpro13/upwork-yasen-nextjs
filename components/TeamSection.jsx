@@ -102,10 +102,10 @@ function TeamSection() {
               />
             </div>
             <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
-              John Done
+              Anna Wood
             </p>
             <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
-              Marketer
+              SEO Specialist
             </p>
           </div>
           <div className="person-container flex flex-col items-center gap-2">
@@ -136,10 +136,10 @@ function TeamSection() {
               />
             </div>
             <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
-              John Done
+              Anna Wood
             </p>
             <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
-              Marketer
+              Frontend Developer
             </p>
           </div>
           <div className="person-container flex flex-col items-center gap-2">
@@ -156,7 +156,7 @@ function TeamSection() {
               John Done
             </p>
             <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
-              Marketer
+              Designer
             </p>
           </div>
         </div>

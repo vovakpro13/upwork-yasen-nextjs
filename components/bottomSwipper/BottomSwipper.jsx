@@ -81,13 +81,13 @@ const BottomSwiper = () => {
                     <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">01.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              QUESTIONNAIRE 
+              Въпросник
             </span>
                     </p>
                     <p className="font-montserrat text-lg font-[500] mt-6 leading-7 slide-description">
-                        It is a long established
-                        <span className="underline font-bold"> fact that a reader will be distracted </span> by the readable content of a page when looking at its layout.
-                        <span className="underline"> The point of using Lorem Ipsum</span>
+                        Попълвате нашият въпросник, за да разберем повече за бизнеса Ви и каква е целта на сайта, който ще изработим.
+                        <span className="underline font-bold"> Тук са засегнати теми, като това какви са  </span> Вашите идеални клиенти и какво точно ви
+                        <span className="underline"> отличава от конкуренцията.</span>
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!bg-white">
@@ -109,13 +109,13 @@ const BottomSwiper = () => {
                     <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">02.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              wireframe 
+              Блок схема
             </span>
                     </p>
                     <p className="font-montserrat text-lg font-[500] mt-6 leading-7 slide-description">
-                        It is a long established
-                        <span className="underline font-bold"> fact that a reader will be distracted </span> by the readable content of a page when looking at its layout.
-                        <span className="underline"> The point of using Lorem Ipsum</span>
+                        На база въпросника, правим анализ на конкуренти сайтове и след това създаваме гръбнака на Вашият уебсайт.
+                        <span className="underline font-bold"> Това е блок схема,  </span> която има за цел да опрдели позиционирането на всички нужни секции и бутони и да направи сайта ви оптимизиран
+                        <span className="underline">, за продаване.</span>
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!bg-white">
@@ -137,13 +137,11 @@ const BottomSwiper = () => {
                     <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">03.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              copywriting 
+              Копирайтинг
             </span>
                     </p>
                     <p className="text-lg font-[500] mt-6 leading-7 slide-description font-montserrat">
-                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold">No AI</p> It is a long
-                        <span className="underline font-bold"> established fact that a reader will be distracted </span> by the readable content of
-                        {/*<span className="underline">The point of using Lorem Ipsum</span>*/}
+                       Създаване съдържание за Вашият сайт, което не просто звучи добре, а и насочва потенциалните клиенти към покупка. НЕ използваме изкуствен интелект и всичко се създава ръчно, за целите на проекта.
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!bg-white">
@@ -165,13 +163,11 @@ const BottomSwiper = () => {
                     <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">04.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              FIGMA DESIGN
+              Дизайн
             </span>
                     </p>
                     <p className="text-lg font-[500] mt-6 leading-7 slide-description font-montserrat">
-                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold">From scratch optimized for CRO</p> It is a long
-                        <span className="underline font-bold"> established fact that a reader will be distracted </span> by the readable content of
-                        {/*<span className="underline">The point of using Lorem Ipsum</span>*/}
+                       На база Вашите предпочитания за цветове, шрифтове и форми , създаваме layout дизайн, без да използваме готови шаблони. Дизайнът включва различни екрани - за широк екран, таблет и телефон.
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!bg-white">
@@ -193,13 +189,11 @@ const BottomSwiper = () => {
                     <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">05.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              VIDEO
+              Видео & Снимки
             </span>
                     </p>
                     <p className="text-lg font-[500] mt-6 leading-7 slide-description font-montserrat">
-                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold">With/without tutor</p> It is a long
-                        <span className="underline font-bold"> established fact that a reader will be distracted </span> by the readable content of
-                        {/*<span className="underline">The point of using Lorem Ipsum</span>*/}
+                        Записваме и обработваме креативно видео съдържание и снимки, които ще отличат сайта Ви от конкуренцията.
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!bg-white">
@@ -221,13 +215,11 @@ const BottomSwiper = () => {
                     <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">06.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              DEVELOPMENT
+             Програмиране
             </span>
                     </p>
                     <p className="text-lg font-[500] mt-6 leading-7 slide-description font-montserrat">
-                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold">Cms or not CMS</p> It is a long
-                        <span className="underline font-bold"> established fact that a reader will be distracted </span> by the readable content of
-                        {/*<span className="underline">The point of using Lorem Ipsum</span>*/}
+                        Пишем на ръка код, за всички нужни функционалности и анимации в сайта Ви. Можем да създадем буквално, всичко, за което си помислите.
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!bg-white">
@@ -249,13 +241,11 @@ const BottomSwiper = () => {
                     <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">07.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              SEO and SPEED
+              SEO & Speed
             </span>
                     </p>
                     <p className="text-lg font-[500] mt-6 leading-7 slide-description font-montserrat">
-                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold"></p> It is a long
-                        <span className="underline font-bold"> established fact that a reader will be distracted </span> by the readable content of
-                        {/*<span className="underline">The point of using Lorem Ipsum</span>*/}
+                        Оптимизираме сайта и съдържанието му за търсещи машини и гарантираме, за ще има скорост на зареждане от поне 90 единици (от 100), спрямо измерването на Google.
                     </p>
                 </SwiperSlide>
                 <SwiperSlide className="!bg-white">
@@ -277,13 +267,37 @@ const BottomSwiper = () => {
                     <p className="items-baseline flex gap-4 mt-6 ">
                         <span className="font-montserrat font-semibold text-2xl">08.</span>
                         <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
-              social growind and ads
+              Social Media & Ads
             </span>
                     </p>
                     <p className="text-lg font-[500] mt-6 leading-7 slide-description font-montserrat">
-                        <p className="text-primary text-xl mb-2 -mt-2 font-semibold">Further improve CRO</p> It is a long
-                        <span className="underline font-bold"> established fact that a reader will be distracted </span> by the readable content of
-                        {/*<span className="underline">The point of using Lorem Ipsum</span>*/}
+                        Съдействаме при създаване на профили и съдържание за социални мрежи, чрез органичен трафик и при нужда конфигурираме платени реклами и план за развитие.
+                    </p>
+                </SwiperSlide>
+                <SwiperSlide className="!bg-white">
+                    <Image
+                        src="/icon-8.svg"
+                        alt="icon"
+                        width={80}
+                        height={80}
+                        className="mt-6 slide-icon"
+                    />
+                    <Image
+                        src="/Vector 8 (1).svg"
+                        alt="line"
+                        width={202}
+                        height={2}
+                        className="w-1/2 "
+                    />
+
+                    <p className="items-baseline flex gap-4 mt-6 ">
+                        <span className="font-montserrat font-semibold text-2xl">09.</span>
+                        <span className="font-donpoligrafbum text-primary font-bold text-xl slide-title">
+             Последваща оптимизация и поддръжка
+            </span>
+                    </p>
+                    <p className="text-lg font-[500] mt-6 leading-7 slide-description font-montserrat">
+                        Поддържаме сайта Ви в добро състояние, като при нужда оптимизираме дизайна и/или съдържанието, на база анализ на потребителското поведение.
                     </p>
                 </SwiperSlide>
             </Swiper>

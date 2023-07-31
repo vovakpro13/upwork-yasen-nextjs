@@ -4,7 +4,6 @@ import {useLoader, Canvas, useThree, useFrame} from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Environment, OrbitControls } from "@react-three/drei";
 import Preloader from "@/components/ui/Preloader";
-import gsap from "gsap";
 import {Euler, Quaternion} from "three";
 if (typeof window !== 'undefined') {
   window.mobileAndTabletCheck = function () {

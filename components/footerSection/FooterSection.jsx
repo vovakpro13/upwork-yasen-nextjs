@@ -28,10 +28,10 @@ function FooterSection() {
             <li><Link className="font-montserrat lg:text-[16px] xl:text-[18px] text-[12px] md:text-[18px] text-primary" href="mailto:jmax@mail.com">jmax@mail.com</Link></li>
           </ul>
           <ul className="flex nav-links font-montserrat">
-            <li><Link className="text-[12px] md:text-[16px] lg:text-[16px] 2xl:text-[22px] text-white" href="">Portfolio</Link></li>
-            <li className="ml-[35px] lg:ml-[20px] xl:ml-[35px]"><Link className="text-[12px] md:text-[16px] lg:text-[16px] 2xl:text-[22px] text-white" href="">Prices</Link></li>
-            <li className="ml-[35px] lg:ml-[20px] xl:ml-[35px]"><Link className="text-[12px] md:text-[16px] lg:text-[16px] 2xl:text-[22px] text-white" href="">Develop Process</Link></li>
-            <li className="ml-[35px] lg:ml-[20px] xl:ml-[35px]"><Link className="text-[12px] md:text-[16px] lg:text-[16px] 2xl:text-[22px] text-white" href="">F.A.Q.</Link></li>
+            <li><Link className="text-[12px] md:text-[16px] lg:text-[16px] 2xl:text-[22px] text-white" href="">ПОРТФОЛИО</Link></li>
+            <li className="ml-[35px] lg:ml-[20px] xl:ml-[35px]"><Link className="text-[12px] md:text-[16px] lg:text-[16px] 2xl:text-[22px] text-white" href="">ЦЕНИ</Link></li>
+            <li className="ml-[35px] lg:ml-[20px] xl:ml-[35px]"><Link className="text-[12px] md:text-[16px] lg:text-[16px] 2xl:text-[22px] text-white" href="">ПРОЦЕС</Link></li>
+            <li className="ml-[35px] lg:ml-[20px] xl:ml-[35px]"><Link className="text-[12px] md:text-[16px] lg:text-[16px] 2xl:text-[22px] text-white" href="">ВЪПРОСИ</Link></li>
           </ul>
           <ul className="flex nav-contact-info soc right-0">
             <li className="footer-social"><Link href="">

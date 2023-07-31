@@ -40,11 +40,11 @@ const BurgerNavbar = () => {
             <div className={`${openMenu ? 'open-menu' : 'close-menu'} duration-300 h-screen wrapper-burger-menu fixed overflow-hidden top-0 left-0 z-[51]`}>
                 <nav className="burger-navbar w-full flex flex-col z-[101] justify-between h-full">
                     <ul className="flex font-montserrat font-bold flex-col">
-                        <li><Link className="text-[24px] text-white" href="#portfolio" onClick={toggleMenu} >Portfolio</Link></li>
-                        <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#prices" onClick={toggleMenu}>Prices</Link></li>
-                        <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#process" onClick={toggleMenu}>Develop Process</Link></li>
-                        <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#faq" onClick={toggleMenu}>F.A.Q.</Link></li>
-                        <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#team" onClick={toggleMenu}>Team</Link></li>
+                        <li><Link className="text-[24px] text-white" href="#portfolio" onClick={toggleMenu} >ПОРТФОЛИО</Link></li>
+                        <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#prices" onClick={toggleMenu}>ЦЕНИ</Link></li>
+                        <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#process" onClick={toggleMenu}>ПРОЦЕС</Link></li>
+                        <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#faq" onClick={toggleMenu}>ВЪПРОСИ</Link></li>
+                        <li className="mt-[35px] lg:mt-[20px] xl:mt-[35px]"><Link className="text-[24px] text-white" href="#team" onClick={toggleMenu}>ЕКИП</Link></li>
                     </ul>
                     <ul className="flex">
                         <li className="footer-social"><Link href="">

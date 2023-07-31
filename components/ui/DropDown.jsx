@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-function DropDown({number, description}) {
+function DropDown({number, description, contant}) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
@@ -30,18 +30,7 @@ function DropDown({number, description}) {
       </div>
       <div className={`${isOpen ? "block" : "hidden" } font-montserrat text-[10px] sm:text-base xl:text-lg pl-[44px] lg:pl-[80px] mt-[20px] xl:mt-[45px]`}>
         <p>
-          But I must explain to you how all this mistaken idea of denouncing
-          pleasure and praising pain was born and I will give you a complete
-          account of the system, and expound the actual teachings of the great
-          explorer of the truth, the master-builder of human happiness.
-        </p>
-        <p className="xl:mt-5">
-          No one rejects, dislikes, or avoids pleasure itself, because it is
-          pleasure, but because those who do not know how to pursue pleasure
-          rationally encounter consequences that are extremely painful. Nor
-          again is there anyone who loves or pursues or desires to obtain pain
-          of itself, because it is pain, but because occasionally circumstances
-          occur in which toil and pain can procure him some great pleasure.
+          {contant}
         </p>
       </div>
     </div>

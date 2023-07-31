@@ -85,7 +85,7 @@ function FormSection() {
                         за безплатен видео одит на Вашият уебсайт или идея
                     </div>
                     <div
-                        className="form-questions relative font-montserrat xl:text-[36px] text-gold xl:max-w-[300px] xl:mt-[33px] xl:ml-[143px] xl:leading-[43px]">
+                        className="form-questions relative font-montserrat xl:text-[36px] text-gold xl:max-w-[366px] xl:mt-[33px] xl:ml-[143px] xl:leading-[43px]">
                         Ще Ви отговорим
                          <Link href="/" className="gold-underline">в рамките на деня.</Link>
                         <Image
@@ -116,16 +116,15 @@ function FormSection() {
                           className="needs-validation" noValidate>
                         <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE"/>
                         <input type="hidden" name="subject" value="New Submission from Web3Forms"/>
-                        {/*<input type="checkbox" name="botcheck" id="" className="none"/>*/}
                         <div className="mb-[41px] relative">
-                            <input type="text" name="name" id="first_name" placeholder="Name" required
+                            <input type="text" name="name" id="first_name" placeholder="Име" required
                                    className="w-full px-3 py-2 placeholder-gray-300 border-b-[1px] border-[#1E1E1E] focus:outline-none form-item font-montserrat"/>
                             <div className="empty-feedback invalid-feedback text-red-400 text-sm mt-1 absolute">
                                 Please provide your name.
                             </div>
                         </div>
                         <div className="mb-[41px] relative">
-                            <input type="text" name="phone" id="phone" placeholder="Phone"
+                            <input type="text" name="phone" id="phone" placeholder="Телефон"
                                    required
                                    className="w-full px-3 py-2 placeholder-gray-300 border-b-[1px] border-[#1E1E1E] focus:outline-none form-item font-montserrat"/>
 
@@ -134,7 +133,7 @@ function FormSection() {
                             </div>
                         </div>
                         <div className="mb-[41px] relative">
-                            <input type="email" name="email" id="email" placeholder="Email"
+                            <input type="email" name="email" id="email" placeholder="Имейл"
                                    required
                                    className="w-full px-3 py-2 placeholder-gray-300 border-b-[1px] border-[#1E1E1E] focus:outline-none form-item font-montserrat"/>
                             <div className="empty-feedback text-red-400 text-sm mt-1 absolute">
@@ -164,7 +163,7 @@ function FormSection() {
                             </div>
                             <button type="submit"
                                     className="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none btn-send">
-                                SEND
+                                Изпрати
                                 <Image
                                     src="/footer/icon-send.svg"
                                     alt="rectangle"

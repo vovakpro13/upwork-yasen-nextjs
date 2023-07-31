@@ -74,7 +74,7 @@ const Navbar = () => {
                     className="w-full"
                 />
               </span>
-              <span className="header-btn__text font-montserrat">Get a consultation</span>
+              <span className="header-btn__text font-montserrat">КОНСУЛТАЦИЯ</span>
 
             </Link>
             <Link href="#" className="relative z-0 px-[13px] header-btn top-[4px] -left-[4px] pr-0">
@@ -95,7 +95,7 @@ const Navbar = () => {
                     className="w-full"
                 />
               </span>
-              <span className="header-btn__text font-montserrat">order a free audit</span>
+              <span className="header-btn__text font-montserrat">БЕЗПЛАТЕН ОДИТ</span>
 
             </Link>
           </div>

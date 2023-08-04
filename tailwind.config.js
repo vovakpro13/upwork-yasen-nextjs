@@ -22,6 +22,9 @@ module.exports = {
         donpoligrafbum: ["var(--font-donpoligrafbum)"],
       },
     },
+    transitionTimingFunction: {
+      'in-expo': 'cubic-bezier(0.3, 1, 0.7, 1)',
+    }
   },
   plugins: [
     function ({ addUtilities }) {

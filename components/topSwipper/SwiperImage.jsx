@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 
 const SwiperImage = ({ source, text, width, height, classname }) => {
   const imgRef = useRef(null);
-  const view = useInView(imgRef)
+  const view = useInView(imgRef, { once: true })
 
   return (
     <img

@@ -4,7 +4,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import AnimatedLink from "../AnimatedLink";
 import SwiperImage from "./SwiperImage";
 
@@ -288,11 +287,6 @@ const MySwiper = () => {
               activeIndex === slide.id ? "active-slide " : "topslide "
             } relative`}
           >
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ amount: 0.5, once: true }}
-            >
               <SwiperImage
                 source={slide.imageBig}
                 text="slide"
@@ -300,7 +294,6 @@ const MySwiper = () => {
                 width={activeIndex === slide.id ? 770 : 260}
                 height={480}
               />
-            </motion.div>
             <div
               className={`${
                 slide.id === 4 ||

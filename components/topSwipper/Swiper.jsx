@@ -287,13 +287,14 @@ const MySwiper = () => {
               activeIndex === slide.id ? "active-slide " : "topslide "
             } relative`}
           >
-              <SwiperImage
-                source={slide.imageBig}
-                text="slide"
-                classname="slide transition-transform"
-                width={activeIndex === slide.id ? 770 : 260}
-                height={480}
-              />
+            <SwiperImage
+              source={slide.imageBig}
+              text="slide"
+              slide={slide}
+              classname="slide transition-transform"
+              width={activeIndex === slide.id ? 770 : 260}
+              height={480}
+            />
             <div
               className={`${
                 slide.id === 4 ||

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { titleAnimation } from "@/animations/titleAnimation";
+import { elementGliding } from "@/animations/elementGliding";
 
 function TeamSection() {
   return (
@@ -96,8 +97,19 @@ function TeamSection() {
           </div>
         </div>
         <div className="right-container right-container-ream flex flex-wrap justify-center items-end xl:w-[750px] gap-10 2xl:gap-20 ">
-          <div className="person-container flex flex-col items-center gap-2">
-            <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
+          <motion.div
+            viewport={{ amount: 0.5, once: true }}
+            initial="hidden"
+            whileInView="visible"
+            variants={elementGliding}
+            custom={1}
+            className="person-container flex flex-col items-center gap-2"
+          >
+            <motion.div
+              variants={elementGliding}
+              custom={2}
+              className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 "
+            >
               <Image
                 src="/5.svg"
                 alt="rectangle"
@@ -105,16 +117,35 @@ function TeamSection() {
                 height={50}
                 className="object-contain "
               />
-            </div>
-            <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
+            </motion.div>
+            <motion.p
+              variants={elementGliding}
+              custom={3}
+              className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] "
+            >
               John Done
-            </p>
-            <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
+            </motion.p>
+            <motion.p
+              variants={elementGliding}
+              custom={4}
+              className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base"
+            >
               Marketer
-            </p>
-          </div>
-          <div className="person-container flex flex-col items-center gap-2">
-            <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
+            </motion.p>
+          </motion.div>
+          <motion.div
+            viewport={{ amount: 0.5, once: true }}
+            initial="hidden"
+            whileInView="visible"
+            variants={elementGliding}
+            custom={1}
+            className="person-container flex flex-col items-center gap-2"
+          >
+            <motion.div
+              variants={elementGliding}
+              custom={2}
+              className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 "
+            >
               <Image
                 src="/teem/2.svg"
                 alt="rectangle"
@@ -122,16 +153,32 @@ function TeamSection() {
                 height={50}
                 className=" object-contain"
               />
-            </div>
-            <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
+            </motion.div>
+            <motion.p
+              variants={elementGliding}
+              custom={3}
+              className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] "
+            >
               Anna Wood
-            </p>
-            <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
+            </motion.p>
+            <motion.p
+              variants={elementGliding}
+              custom={4}
+              className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base"
+            >
               SEO Specialist
-            </p>
-          </div>
-          <div className="person-container flex flex-col items-center gap-2">
-            <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
+            </motion.p>
+          </motion.div>
+          <motion.div
+            viewport={{ amount: 0.5, once: true }}
+            initial="hidden"
+            whileInView="visible"
+            variants={elementGliding}
+            custom={1}
+            className="person-container flex flex-col items-center gap-2"
+          >
+            <motion.div variants={elementGliding}
+              custom={2} className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image
                 src="/teem/3.svg"
                 alt="rectangle"
@@ -139,16 +186,22 @@ function TeamSection() {
                 height={50}
                 className="object-contain"
               />
-            </div>
-            <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
+            </motion.div>
+            <motion.p variants={elementGliding}
+              custom={3} className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
               Mike Green
-            </p>
-            <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
+            </motion.p>
+            <motion.p variants={elementGliding}
+              custom={4} className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
               Preject Manager
-            </p>
-          </div>
-          <div className="person-container flex flex-col items-center gap-2">
-            <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
+            </motion.p>
+          </motion.div>
+          <motion.div initial="hidden"
+            whileInView="visible"
+            variants={elementGliding}
+            custom={1} className="person-container flex flex-col items-center gap-2">
+            <motion.div variants={elementGliding}
+            custom={2} className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image
                 src="/teem/4.svg"
                 alt="rectangle"
@@ -156,16 +209,22 @@ function TeamSection() {
                 height={50}
                 className="object-contain "
               />
-            </div>
-            <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
+            </motion.div>
+            <motion.p variants={elementGliding}
+            custom={3} className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
               Anna Wood
-            </p>
-            <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
+            </motion.p>
+            <motion.p variants={elementGliding}
+            custom={4} className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
               Frontend Developer
-            </p>
-          </div>
-          <div className="person-container flex flex-col items-center gap-2">
-            <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
+            </motion.p>
+          </motion.div>
+          <motion.div initial="hidden"
+            whileInView="visible"
+            variants={elementGliding}
+            custom={1} className="person-container flex flex-col items-center gap-2">
+            <motion.div variants={elementGliding}
+            custom={2} className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image
                 src="/teem/5.1.svg"
                 alt="rectangle"
@@ -173,14 +232,16 @@ function TeamSection() {
                 height={50}
                 className="object-contain "
               />
-            </div>
-            <p className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
+            </motion.div>
+            <motion.p variants={elementGliding}
+            custom={3} className="font-montserrat font-semibold text-xs sm:text-lg xl:text-[26px] text-[#EFF6F4] ">
               John Done
-            </p>
-            <p className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
+            </motion.p>
+            <motion.p variants={elementGliding}
+            custom={4} className="font-montserrat font-semibold text-secondary text-[10px] sm:text-base">
               Designer
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </div>
       </div>
       <div className="w-full absolute left-0 top-9 overflow-hidden z-0">

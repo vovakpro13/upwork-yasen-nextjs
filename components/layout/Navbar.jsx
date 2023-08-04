@@ -63,7 +63,7 @@ const Navbar = () => {
           </Link>
           <div className="buttons-container hidden lg:flex  justify-around items-center relative z-30">
             <AnimatedLink
-              classname="relative z-0 px-[13px] header-btn top-[4px]"
+              classname="relative z-0 px-[13px] header-btn top-[4px] transition-all duration-100"
               href="#"
             >
               <hr className="nav-button h-24 -top-5 w-0 absolute z-0 border-primary border-t-[3px] rounded-sm " />
@@ -88,7 +88,7 @@ const Navbar = () => {
               </span>
             </AnimatedLink>
             <AnimatedLink
-              classname="relative z-0 px-[13px] header-btn top-[4px]"
+              classname="relative z-0 px-[13px] header-btn top-[4px] transition-all duration-100"
               href="#form-section"
             >
               <hr className="nav-button h-24 -top-5 w-0 absolute z-0 border-primary border-t-[3px] rounded-sm " />

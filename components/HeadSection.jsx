@@ -48,7 +48,7 @@ const HeadSection = () => {
           </div>
           <div className="buttons-container relative w-full h-[40px] sm:h-[55px] xl:w-72 flex lg:hidden justify-between items-center z-30 ">
             <AnimatedLink
-              classname="relative z-0 px-[13px] header-btn top-[4px]"
+              classname="relative z-0 px-[13px] header-btn top-[4px] transition-all duration-100"
               href="#"
             >
               <hr className="nav-button h-24 -top-5 w-0 absolute z-0 border-primary border-t-[3px] rounded-sm " />
@@ -73,7 +73,7 @@ const HeadSection = () => {
               </span>
             </AnimatedLink>
             <AnimatedLink
-              classname="relative z-0 px-[13px] header-btn top-[4px]"
+              classname="relative z-0 px-[13px] header-btn top-[4px] transition-all duration-100"
               href="#form-section"
             >
               <hr className="nav-button h-24 -top-5 w-0 absolute z-0 border-primary border-t-[3px] rounded-sm " />

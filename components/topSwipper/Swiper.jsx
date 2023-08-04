@@ -337,9 +337,8 @@ const MySwiper = () => {
               {activeIndex === slide.id && (
                 <AnimatedLink
                   href={slide.link}
-                  classname="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none link-portfolio"
+                  classname="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none link-portfolio transition-all duration-100"
                 >
-                  {" "}
                   <Image
                     src="/portfolio/btn.svg"
                     alt="rectangle"

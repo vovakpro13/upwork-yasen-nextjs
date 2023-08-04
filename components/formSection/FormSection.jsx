@@ -217,7 +217,7 @@ function FormSection() {
               </div>
               <AnimatedButton
                 type="submit"
-                classname="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none btn-send"
+                classname="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none btn-send transition-all duration-100"
               >
                 Изпрати
                 <Image
@@ -238,17 +238,3 @@ function FormSection() {
 }
 
 export default FormSection;
-
-{/* <button
-type="submit"
-className="w-full relative px-3 font-montserrat text-[26px] text-[#1E1E1E] focus:outline-none btn-send"
->
-Изпрати
-<Image
-  src="/footer/icon-send.svg"
-  alt="rectangle"
-  width={24}
-  height={24}
-  className="absolute top-0 btn-send-icon"
-/>
-</button> */}

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import "./style.css";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { titleAnimation } from "@/animations/titleAnimation";
 import AnimatedButton from "../AnimatedButton";
 
 function FormSection() {
@@ -81,18 +83,29 @@ function FormSection() {
       className="form-section px-[16px] lg:px-32 lg:pt-[143px] lg:pb-[160px]"
     >
       <div className="form-container">
-        <div className="left-section relative xl:pb-[145px]">
-          <h2 className="form-title text-gold font-donpoligrafbum">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.5, once: true }}
+          className="left-section relative xl:pb-[145px]"
+        >
+          <motion.h2
+            variants={titleAnimation}
+            custom={1}
+            className="form-title text-gold font-donpoligrafbum"
+          >
             <span className="font-montserrat form-title-do gold-underline">
               СВЬРЖЕТЕ СЕ{" "}
             </span>{" "}
             с нас -
-          </h2>
-          <div className="form-caption font-montserrat text-[56px] xl:text-[56px] xl:max-w-[600px] text-right">
+          </motion.h2>
+          <motion.div variants={titleAnimation}
+              custom={2} className="form-caption font-montserrat text-[56px] xl:text-[56px] xl:max-w-[600px] text-right">
             {" "}
             за безплатен видео одит на Вашият уебсайт или идея
-          </div>
-          <div className="form-questions relative font-montserrat xl:text-[36px] text-gold xl:max-w-[366px] xl:mt-[33px] xl:ml-[143px] xl:leading-[43px]">
+          </motion.div>
+          <motion.div variants={titleAnimation}
+              custom={3} className="form-questions relative font-montserrat xl:text-[36px] text-gold xl:max-w-[366px] xl:mt-[33px] xl:ml-[143px] xl:leading-[43px]">
             Ще Ви отговорим
             <Link href="/" className="gold-underline">
               в рамките на деня.
@@ -104,7 +117,7 @@ function FormSection() {
               height={10}
               className="left-line-form absolute top-1/2 left-[-91%]"
             />
-          </div>
+          </motion.div>
           <Image
             src="/blackdots.svg"
             alt="rectangle"
@@ -112,7 +125,7 @@ function FormSection() {
             height={81}
             className="absolute xl:right-[37%] bottom-0 form-dots-pic"
           />
-        </div>
+        </motion.div>
         <div className="right-section relative">
           <Image
             src="/form-line-right.svg"

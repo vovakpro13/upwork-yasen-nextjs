@@ -1,8 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { titleAnimation } from "@/animations/titleAnimation";
 
 function TeamSection() {
   return (
-    <section className="team-section-container relative flex flex-col xl:flex-row-reverse xl:justify-between items-end w-full h-[590px] sm:h-[804px] xl:h-[643px] px-9 lg:px-32 mt-[80px] sm:mt-[100px] xl:mt-[160px] pt-12 xl:pb-[120px] xl:pt-[151px] " id="team">
+    <section
+      className="team-section-container relative flex flex-col xl:flex-row-reverse xl:justify-between items-end w-full h-[590px] sm:h-[804px] xl:h-[643px] px-9 lg:px-32 mt-[80px] sm:mt-[100px] xl:mt-[160px] pt-12 xl:pb-[120px] xl:pt-[151px] "
+      id="team"
+    >
       <Image
         src="/tlight.svg"
         alt="green top"
@@ -31,8 +38,17 @@ function TeamSection() {
             Landing pages & online shops optimized for higher conversion rate
           </p>
         </div>
-        <div className="first-right-container  ">
-          <div className="big-text text-gold flex justify-end xl:justify-evenly items-center">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.5, once: true }}
+          className="first-right-container  "
+        >
+          <motion.div
+            variants={titleAnimation}
+            custom={1}
+            className="big-text text-gold flex justify-end xl:justify-evenly items-center"
+          >
             <p>
               <span className="font-montserrat text-[18px] xl:text-[46px] font-light underline ">
                 нашият
@@ -43,18 +59,24 @@ function TeamSection() {
               </span>
             </p>
             <hr className="w-[30px] sm:w-[40px] xl:w-[58px] h-1 border-gold border-t-[7px] sm:border-t-[10px] xl:border-t-[13px] ml-5 xl:ml-5 " />
-          </div>
-          <p className="text-secondary text-base sm:text-lg xl:text-[22px] 2xl:text-4xl w-full mt-3 xl:mt-10 text-end pr-6 xl:pr-12 ">
+          </motion.div>
+          <motion.p
+            variants={titleAnimation}
+            custom={2}
+            className="text-secondary text-base sm:text-lg xl:text-[22px] 2xl:text-4xl w-full mt-3 xl:mt-10 text-end pr-6 xl:pr-12 "
+          >
             5-те ⭐ на Джей Макс
-          </p>
-          <p className="text-secondary text-base sm:text-lg xl:text-[22px] 2xl:text-4xl text-end">
-
-          </p>
-          <p className="font-montserrat text-[#EFF6F4] text-[10px] sm:text-sm xl:text-lg mt-3 xl:mt-16">
-            Ние сме 5 амбициозни предприемача, обединени
-            от страстта си ком създаването на изключителни уеб решения
-          </p>
-        </div>
+          </motion.p>
+          <p className="text-secondary text-base sm:text-lg xl:text-[22px] 2xl:text-4xl text-end"></p>
+          <motion.p
+            variants={titleAnimation}
+            custom={3}
+            className="font-montserrat text-[#EFF6F4] text-[10px] sm:text-sm xl:text-lg mt-3 xl:mt-16"
+          >
+            Ние сме 5 амбициозни предприемача, обединени от страстта си ком
+            създаването на изключителни уеб решения
+          </motion.p>
+        </motion.div>
       </div>
       <div className="second-container xl:max-w-[700px] flex relative z-20 mt-10 xl:mt-0">
         <div className="left-container w-16 hidden xl:flex flex-col justify-between items-start  ">
@@ -172,7 +194,9 @@ function TeamSection() {
           />
         </div>
       </div>{" "}
-      <div className="w-full absolute left-0 top-9 overflow-hidden z-0 text-[410px] bg-text-team">TEAM</div>
+      <div className="w-full absolute left-0 top-9 overflow-hidden z-0 text-[410px] bg-text-team">
+        TEAM
+      </div>
     </section>
   );
 }

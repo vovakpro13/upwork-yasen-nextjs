@@ -2,11 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { motion } from "framer-motion";
 import Wolf from "./ui/Wolf";
 import AnimatedWaves from "./ui/AnimatedWaves";
-import "./components.css";
 import AnimatedLink from "./AnimatedLink";
+import { titleAnimation } from "@/animations/titleAnimation";
+import "./components.css";
+
 const HeadSection = () => {
   return (
     <section className="section-wrapper bg-[#121212] relative">
@@ -28,24 +30,53 @@ const HeadSection = () => {
       </div>
       <div className="top-container-wrapper w-full h-screen-top-section relative flex flex-col-reverse xl:flex-row justify-end font-poppins text-white px-[16px] lg:px-32">
         <div className="left-container relative xl:w-6/12 flex flex-col justify-between left-container-custom">
-          <div className="text-container text-container-custom relative flex flex-col justify-between xl:mt-0 z-50 pt-2.5">
-            <p className="text-primary font-semibold font-montserrat left-container-text-top">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3, once: true }}
+            className="text-container text-container-custom relative flex flex-col justify-between xl:mt-0 z-50 pt-2.5"
+          >
+            <motion.p
+              variants={titleAnimation}
+              custom={1}
+              className="text-primary font-semibold font-montserrat left-container-text-top"
+            >
               Ние създаваме от нулата
-            </p>
+            </motion.p>
             <div className="big-text-container font-donpoligrafbum h-fit flex flex-col justify-between text-gold  font-bold text-[15px] sm:text-xl lg:text-2xl xl:text-4xl mt-8">
               <h1 className="title-h1">
-                <span className="block">ЛЕНДИНГ СТРАНИЦИ</span>
-                <span className="translate-x-9 sm:translate-x-14 lg:translate-x-[140px] block">
+                <motion.span
+                  variants={titleAnimation}
+                  custom={2}
+                  className="block"
+                >
+                  ЛЕНДИНГ СТРАНИЦИ
+                </motion.span>
+                <motion.span
+                  variants={titleAnimation}
+                  custom={3}
+                  className="translate-x-9 sm:translate-x-14 lg:translate-x-[140px] block"
+                >
                   ОНЛАЙН МАГАЗИНИ
-                </span>
-                <span className="lg:translate-x-[31px] block">УЕБ САЙТОВЕ</span>
+                </motion.span>
+                <motion.span
+                  variants={titleAnimation}
+                  custom={4}
+                  className="lg:translate-x-[31px] block"
+                >
+                  УЕБ САЙТОВЕ
+                </motion.span>
               </h1>
             </div>
-            <p className="font-montserrat mt-8 xl:leading-[50px] text-primary sm:text-[16px] lg:text-[36px] text-caption xl:font-light max-w-xs sm:max-w-md lg:max-w-[570px] xl:max-w-[620px] title-text">
+            <motion.p
+              variants={titleAnimation}
+              custom={5}
+              className="font-montserrat mt-8 xl:leading-[50px] text-primary sm:text-[16px] lg:text-[36px] text-caption xl:font-light max-w-xs sm:max-w-md lg:max-w-[570px] xl:max-w-[620px] title-text"
+            >
               И ще работим с Вас, до момента, в който сайта Ви започне да прави
               пари!
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
           <div className="buttons-container relative w-full h-[40px] sm:h-[55px] xl:w-72 flex lg:hidden justify-between items-center z-30 ">
             <AnimatedLink
               classname="relative z-0 px-[13px] header-btn top-[4px] transition-all duration-100"

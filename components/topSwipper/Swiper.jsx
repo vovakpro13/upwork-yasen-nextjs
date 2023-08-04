@@ -290,7 +290,7 @@ const MySwiper = () => {
               <SwiperImage
                 source={slide.imageBig}
                 text="slide"
-                classname="slide"
+                classname="slide transition-transform"
                 width={activeIndex === slide.id ? 770 : 260}
                 height={480}
               />

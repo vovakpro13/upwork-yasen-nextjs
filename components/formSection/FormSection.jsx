@@ -6,6 +6,7 @@ import "./style.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { titleAnimation } from "@/animations/titleAnimation";
+import { elementGliding } from "@/animations/elementGliding";
 import AnimatedButton from "../AnimatedButton";
 
 function FormSection() {
@@ -99,13 +100,19 @@ function FormSection() {
             </span>{" "}
             с нас -
           </motion.h2>
-          <motion.div variants={titleAnimation}
-              custom={2} className="form-caption font-montserrat text-[56px] xl:text-[56px] xl:max-w-[600px] text-right">
+          <motion.div
+            variants={titleAnimation}
+            custom={2}
+            className="form-caption font-montserrat text-[56px] xl:text-[56px] xl:max-w-[600px] text-right"
+          >
             {" "}
             за безплатен видео одит на Вашият уебсайт или идея
           </motion.div>
-          <motion.div variants={titleAnimation}
-              custom={3} className="form-questions relative font-montserrat xl:text-[36px] text-gold xl:max-w-[366px] xl:mt-[33px] xl:ml-[143px] xl:leading-[43px]">
+          <motion.div
+            variants={titleAnimation}
+            custom={3}
+            className="form-questions relative font-montserrat xl:text-[36px] text-gold xl:max-w-[366px] xl:mt-[33px] xl:ml-[143px] xl:leading-[43px]"
+          >
             Ще Ви отговорим
             <Link href="/" className="gold-underline">
               в рамките на деня.
@@ -134,7 +141,10 @@ function FormSection() {
             height={10}
             className="left-line-form absolute top-[18px] right-[-133px] xl:inline hidden"
           />
-          <form
+          <motion.form
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5, once: true }}
             action="https://api.web3forms.com/submit"
             method="POST"
             id="form"
@@ -152,7 +162,9 @@ function FormSection() {
               value="New Submission from Web3Forms"
             />
             <div className="mb-[41px] relative">
-              <input
+              <motion.input
+                variants={elementGliding}
+                custom={1}
                 type="text"
                 name="name"
                 id="first_name"
@@ -165,7 +177,9 @@ function FormSection() {
               </div>
             </div>
             <div className="mb-[41px] relative">
-              <input
+              <motion.input
+                variants={elementGliding}
+                custom={2}
                 type="text"
                 name="phone"
                 id="phone"
@@ -179,7 +193,9 @@ function FormSection() {
               </div>
             </div>
             <div className="mb-[41px] relative">
-              <input
+              <motion.input
+                variants={elementGliding}
+                custom={3}
                 type="email"
                 name="email"
                 id="email"
@@ -243,7 +259,7 @@ function FormSection() {
               </AnimatedButton>
             </div>
             <p className="text-base text-center text-gray-400" id="result"></p>
-          </form>
+          </motion.form>
         </div>
       </div>
     </section>

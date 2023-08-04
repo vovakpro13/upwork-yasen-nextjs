@@ -259,7 +259,7 @@ const MySwiper = () => {
               alt="scroll"
               width={63}
               height={56}
-              className="finger"
+              className="finger animate-handRotate"
             />
           </div>
         </div>

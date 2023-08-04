@@ -46,7 +46,7 @@ const BottomSwiper = () => {
     return (
         <>
             <div className="finger-bottom-slider relative flex 33">
-                <Image src="/flick-to-left 3.svg" alt="scroll" width={63} height={56} className="finger relative"/>
+                <Image src="/flick-to-left 3.svg" alt="scroll" width={63} height={56} className="finger relative animate-handRotate"/>
             </div>
             <Swiper
                 // loop={true}

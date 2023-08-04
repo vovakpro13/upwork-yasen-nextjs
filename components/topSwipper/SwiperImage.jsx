@@ -1,7 +1,15 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-const SwiperImage = ({ source, text, width, height, classname, slide, index }) => {
+const SwiperImage = ({
+  source,
+  text,
+  width,
+  height,
+  classname,
+  slide,
+  index,
+}) => {
   const imgRef = useRef(null);
   const view = useInView(imgRef);
 

@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         primary: "#51C14F",
-        secondary:"#44937D",
+        secondary: "#44937D",
         gold: "#B3A779",
       },
       fontFamily: {
@@ -24,10 +24,19 @@ module.exports = {
       transitionDuration: {
         DEFAULT: "300ms",
       },
+      keyframes: {
+        handRotate: {
+          "0%, 100%": { transform: "rotate(-15deg)" },
+          "50%": { transform: "rotate(15deg)" },
+        },
+      },
+      animation: {
+        handRotate: "handRotate 2s ease-in-out infinite",
+      },
     },
     transitionTimingFunction: {
-      'in-expo': 'cubic-bezier(0.3, 1, 0.7, 1)',
-    }
+      "in-expo": "cubic-bezier(0.3, 1, 0.7, 1)",
+    },
   },
   plugins: [
     function ({ addUtilities }) {

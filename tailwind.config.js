@@ -21,6 +21,9 @@ module.exports = {
         montserrat: ["var(--font-montserrat)"],
         donpoligrafbum: ["var(--font-donpoligrafbum)"],
       },
+      transitionDuration: {
+        DEFAULT: "300ms",
+      },
     },
     transitionTimingFunction: {
       'in-expo': 'cubic-bezier(0.3, 1, 0.7, 1)',

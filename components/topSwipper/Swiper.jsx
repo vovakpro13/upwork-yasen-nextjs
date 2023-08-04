@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import Image from "next/image";
 import AnimatedLink from "../AnimatedLink";
+import SwiperImage from "./SwiperImage";
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -286,13 +287,13 @@ const MySwiper = () => {
               activeIndex === slide.id ? "active-slide " : "topslide "
             } relative`}
           >
-            <img
-              className="slide"
-              src={slide.imageBig}
-              alt="slide"
-              width={activeIndex === slide.id ? 770 : 260}
-              height={480}
-            />
+              <SwiperImage
+                source={slide.imageBig}
+                text="slide"
+                classname="slide transition-transform"
+                width={activeIndex === slide.id ? 770 : 260}
+                height={480}
+              />
             <div
               className={`${
                 slide.id === 4 ||
@@ -357,4 +358,3 @@ const MySwiper = () => {
 };
 
 export default MySwiper;
-

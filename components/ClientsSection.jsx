@@ -1,16 +1,29 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { titleAnimation } from "@/animations/titleAnimation";
 
 function ClientsSection() {
   return (
     <section className="clients-container w-full relative h-[333px] sm:h-[470px] xl:h-[585px] overflow-hidden">
-      <div className="text-container relative z-50 w-full h-24 flex flex-col sm:flex-row justify-between sm:justify-center sm:gap-5 sm:items-center xl:justify-between xl:px-32 mt-[62px] xl:mt-[92px] ">
-        <p className="font-donpoligrafbum text-gold flex w-[265px] sm:w-[320px] xl:w-[847px] justify-between items-center ml-6 sm:ml-0 clients-section-title">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.5, once: true }}
+        className="text-container relative z-50 w-full h-24 flex flex-col sm:flex-row justify-between sm:justify-center sm:gap-5 sm:items-center xl:justify-between xl:px-32 mt-[62px] xl:mt-[92px] "
+      >
+        <motion.p
+          variants={titleAnimation}
+          custom={1}
+          className="font-donpoligrafbum text-gold flex w-[265px] sm:w-[320px] xl:w-[847px] justify-between items-center ml-6 sm:ml-0 clients-section-title"
+        >
           <span className="font-montserrat  gold-underline font-extralight text-lg xl:text-[46px] clients-section-title-our">
             нашите
           </span>
-            КЛИЕНТИ -
-        </p>
+          КЛИЕНТИ -
+        </motion.p>
         <Image
           src="/Group 25.svg"
           alt="line"
@@ -18,10 +31,14 @@ function ClientsSection() {
           height={8}
           className="hidden xl:block clients-section-title-line"
         />
-        <p className="text-[#EFF6F4] font-montserrat w-[230px] xl:w-[260px] text-sm xl:text-base text-center sm:text-end font-light xl:font-normal translate-x-14 sm:translate-x-0 clients-section-title-desc">
-            Малка част от брандовете с които сме работили
-        </p>
-      </div>
+        <motion.p
+          variants={titleAnimation}
+          custom={1}
+          className="text-[#EFF6F4] font-montserrat w-[230px] xl:w-[260px] text-sm xl:text-base text-center sm:text-end font-light xl:font-normal translate-x-14 sm:translate-x-0 clients-section-title-desc"
+        >
+          Малка част от брандовете с които сме работили
+        </motion.p>
+      </motion.div>
       <div className="clients-animation-container w-[1157px] sm:w-[2200px] 2xl:w-[2700px] h-9 sm:h-[82px] absolute z-20 bottom-20 xl:bottom-48 -left-96 flex justify-between items-center ">
         <Image
           src="/Logo (3).svg"

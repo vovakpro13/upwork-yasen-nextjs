@@ -291,6 +291,7 @@ const MySwiper = () => {
               source={slide.imageBig}
               text="slide"
               slide={slide}
+              index={activeIndex}
               classname="slide transition-transform"
               width={activeIndex === slide.id ? 770 : 260}
               height={480}

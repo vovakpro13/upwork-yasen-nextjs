@@ -1,11 +1,11 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-const SwiperImage = ({ source, text, width, height, classname, slide }) => {
+const SwiperImage = ({ source, text, width, height, classname, slide, index }) => {
   const imgRef = useRef(null);
-  const view = useInView(imgRef, { once: true });
+  const view = useInView(imgRef);
 
-  if (slide.id === 7)
+  if (slide.id === index)
     return (
       <img
         ref={imgRef}
